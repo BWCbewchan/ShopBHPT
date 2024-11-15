@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHPT API Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .endpoint {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .method {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .get { background-color: #61affe; }
+        .post { background-color: #49cc90; }
+        .put { background-color: #fca130; }
+        .delete { background-color: #f93e3e; }
+
+        .example {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .url {
+            color: #0066cc;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BHPT API Documentation</h1>
+        <p>RESTful API documentation for BHPT E-commerce Platform</p>
+    </div>
+
+    <div class="section">
+        <h2>Categories</h2>
+        
+        <div class="endpoint">
+            <h3><span class="method get">GET</span> Get All Categories</h3>
+            <div class="url">GET /api/shop/all</div>
+            <p>Returns a list of all categories with their subcategories</p>
+            <h4>Example Response:</h4>
+            <pre>
+{
+    "id": 1,
+    "name": "Áo nam",
+    "subcategories": [
+        {
+            "id": 1,
+            "name": "Áo Polo",
+            "img": "../img/shared/subcategory/ao_polo.png"
+        }
+    ]
+}
+            </pre>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Items</h2>
+        
+        <div class="endpoint">
+            <h3><span class="method get">GET</span> Get All Items</h3>
+            <div class="url">GET /api/items</div>
+            <p>Returns a list of all items</p>
+            <h4>Example Response:</h4>
+            <pre>
+{
+    "id": 1,
+    "name": "Áo Polo Nam Pique Mắt Chim Basic",
+    "sold": 621,
+    "price": 299000,
+    "discount": 10,
+    "colors": ["Xanh", "Đen", "Trắng"],
+    "sizes": ["M", "L", "XL"],
+    "characteristics": [
+        "Chất liệu: Pique mắt chim",
+        "Cotton USA cao cấp",
+        "Thấm hút tốt"
+    ]
+}
+            </pre>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method get">GET</span> Get Item by ID</h3>
+            <div class="url">GET /api/items/{id}</div>
+            <p>Returns a single item by its ID</p>
+            <h4>Parameters:</h4>
+            <pre>id: number (path parameter)</pre>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method post">POST</span> Create Item</h3>
+            <div class="url">POST /api/items</div>
+            <p>Creates a new item</p>
+            <h4>Request Body:</h4>
+            <pre>
+{
+    "name": "Áo Polo Nam Pique Mắt Chim Basic",
+    "price": 299000,
+    "discount": 10,
+    "colors": ["Xanh", "Đen", "Trắng"],
+    "sizes": ["M", "L", "XL"],
+    "characteristics": [
+        "Chất liệu: Pique mắt chim",
+        "Cotton USA cao cấp",
+        "Thấm hút tốt"
+    ],
+    "subcategoryId": 1
+}
+            </pre>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method put">PUT</span> Update Item</h3>
+            <div class="url">PUT /api/items/{id}</div>
+            <p>Updates an existing item</p>
+            <h4>Parameters:</h4>
+            <pre>id: number (path parameter)</pre>
+            <h4>Request Body:</h4>
+            <pre>
+{
+    "name": "Áo Polo Nam Updated",
+    "price": 399000,
+    "discount": 15
+}
+            </pre>
+        </div>
+
+        <div class="endpoint">
+            <h3><span class="method delete">DELETE</span> Delete Item</h3>
+            <div class="url">DELETE /api/items/{id}</div>
+            <p>Deletes an item</p>
+            <h4>Parameters:</h4>
+            <pre>id: number (path parameter)</pre>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Subcategories</h2>
+        
+        <div class="endpoint">
+            <h3><span class="method get">GET</span> Get All Subcategories</h3>
+            <div class="url">GET /api/subcategories</div>
+            <p>Returns a list of all subcategories</p>
+            <h4>Example Response:</h4>
+            <pre>
+{
+    "id": 1,
+    "name": "Áo Polo",
+    "img": "../img/shared/subcategory/ao_polo.png",
+    "categoryId": 1
+}
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

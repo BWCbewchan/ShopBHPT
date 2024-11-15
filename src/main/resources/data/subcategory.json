@@ -1,0 +1,124 @@
+[
+	{
+		"id": 1,
+		"category_id": 1,
+		"name": "Áo Polo",
+		"img": "../img/shared/subcategory/ao_polo.png"
+	},
+	{
+		"id": 2,
+		"category_id": 1,
+		"name": "Áo Thun",
+		"img": "../img/shared/subcategory/ao_thun.png"
+	},
+	{
+		"id": 3,
+		"category_id": 1,
+		"name": "Áo Khoác",
+		"img": "../img/shared/subcategory/ao_khoac.png"
+	},
+	{
+		"id": 4,
+		"category_id": 1,
+		"name": "Áo Sơ Mi",
+		"img": "../img/shared/subcategory/ao_so_mi.png"
+	},
+	{
+		"id": 5,
+		"category_id": 1,
+		"name": "Áo Len"
+	},
+	{
+		"id": 6,
+		"category_id": 1,
+		"name": "Áo Nỉ",
+		"img": "../img/shared/subcategory/ao_ni.png"
+	},
+	{
+		"id": 7,
+		"category_id": 1,
+		"name": "Áo Vest"
+	},
+	{
+		"id": 9,
+		"category_id": 2,
+		"name": "Quần Jeans",
+		"img": "../img/shared/subcategory/quan_bo.png"
+	},
+	{
+		"id": 10,
+		"category_id": 2,
+		"name": "Quần Âu",
+		"img": "../img/shared/subcategory/quan_au.png"
+	},
+	{
+		"id": 11,
+		"category_id": 2,
+		"name": "Quần Kaki",
+		"img": "../img/shared/subcategory/quan_kaki.png"
+	},
+	{
+		"id": 12,
+		"category_id": 2,
+		"name": "Quần Short",
+		"img": "../img/shared/subcategory/quan_dui.png"
+	},
+	{
+		"id": 13,
+		"category_id": 3,
+		"name": "Bộ Thể Thao",
+		"img": "../img/shared/subcategory/do_bo.png"
+	},
+	{
+		"id": 14,
+		"category_id": 3,
+		"name": "Áo thun thể thao"
+	},
+	{
+		"id": 15,
+		"category_id": 3,
+		"name": "Áo polo thể thao"
+	},
+	{
+		"id": 16,
+		"category_id": 3,
+		"name": "Quần thể thao"
+	},
+	{
+		"id": 17,
+		"category_id": 5,
+		"name": "Áo Ba lỗ"
+	},
+	{
+		"id": 18,
+		"category_id": 5,
+		"name": "Áo giữ nhiệt"
+	},
+	{
+		"id": 19,
+		"category_id": 5,
+		"name": "Quần lót",
+		"img": "../img/shared/subcategory/do_lot.png"
+	},
+	{
+		"id": 20,
+		"category_id": 6,
+		"name": "Thắt lưng"
+	},
+	{
+		"id": 21,
+		"category_id": 6,
+		"name": "Giày"
+	},
+	{
+		"id": 22,
+		"category_id": 6,
+		"name": "Phụ kiện khác",
+		"img": "../img/shared/subcategory/phu_kien.png"
+	},
+	{
+		"id": 23,
+		"category_id": 4,
+		"name": "Đồ bộ"
+	}
+]
