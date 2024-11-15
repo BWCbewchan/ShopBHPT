@@ -1,100 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BHPT API Documentation</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #f5f5f5;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #f5f5f5;
+      }
 
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
 
-        .section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+      .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
 
-        .endpoint {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
+      .endpoint {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
 
-        .method {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 4px;
-            color: white;
-            font-weight: bold;
-            margin-right: 10px;
-        }
+      .method {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 4px;
+        color: white;
+        font-weight: bold;
+        margin-right: 10px;
+      }
 
-        .get { background-color: #61affe; }
-        .post { background-color: #49cc90; }
-        .put { background-color: #fca130; }
-        .delete { background-color: #f93e3e; }
+      .get {
+        background-color: #61affe;
+      }
+      .post {
+        background-color: #49cc90;
+      }
+      .put {
+        background-color: #fca130;
+      }
+      .delete {
+        background-color: #f93e3e;
+      }
 
-        .example {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 4px;
-            margin: 10px 0;
-        }
+      .example {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 4px;
+        margin: 10px 0;
+      }
 
-        pre {
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 4px;
-        }
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 4px;
+      }
 
-        .url {
-            color: #0066cc;
-            font-family: monospace;
-            margin: 10px 0;
+      .url {
+        color: #0066cc;
+        font-family: monospace;
+        margin: 10px 0;
+      }
+
+      .search-form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .search-button {
+        background: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      .search-button:hover {
+        background: #45a049;
+      }
+
+      .data-container {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+
+      /* Responsive grid for form groups */
+      @media (min-width: 768px) {
+        .search-form {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
         }
+        
+        .search-button {
+          grid-column: span 2;
+        }
+      }
+
+      .global-search {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      .global-search input {
+        flex: 1;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+      }
+
+      .global-search input:focus {
+        outline: none;
+        border-color: #4CAF50;
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+      }
+
+      .global-search .search-button {
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 25px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .global-search .search-button:hover {
+        background: #45a049;
+      }
+
+      .search-results {
+        margin-top: 20px;
+      }
+
+      .result-item {
+        background: white;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      .result-item h4 {
+        margin: 0 0 10px 0;
+        color: #333;
+      }
+
+      .result-item p {
+        margin: 5px 0;
+        color: #666;
+      }
+
+      .result-item .price {
+        font-weight: bold;
+        color: #4CAF50;
+      }
+
+      .result-item .discount {
+        color: #e53935;
+      }
+
+      .no-results {
+        text-align: center;
+        padding: 20px;
+        color: #666;
+      }
+
+      /* Loading animation */
+      .loading {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .loading:after {
+        content: "...";
+        animation: dots 1.5s steps(5, end) infinite;
+      }
+
+      @keyframes dots {
+        0%, 20% { content: "."; }
+        40% { content: ".."; }
+        60% { content: "..."; }
+        80%, 100% { content: ""; }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <h1>BHPT API Documentation</h1>
-        <p>RESTful API documentation for BHPT E-commerce Platform</p>
+      <h1>BHPT API Documentation</h1>
+      <p>RESTful API documentation for BHPT E-commerce Platform</p>
     </div>
 
     <div class="section">
-        <h2>Categories</h2>
-        
-        <div class="endpoint">
-            <h3><span class="method get">GET</span> Get All Categories</h3>
-            <div class="url">GET /api/shop/all</div>
-            <p>Returns a list of all categories with their subcategories</p>
-            <h4>Example Response:</h4>
-            <pre>
+      <h2>Categories</h2>
+
+      <div class="endpoint">
+        <h3><span class="method get">GET</span> Get All Categories</h3>
+        <div class="url">GET /api/shop/all</div>
+        <p>Returns a list of all categories with their subcategories</p>
+        <h4>Example Response:</h4>
+        <pre>
 {
     "id": 1,
     "name": "Áo nam",
@@ -106,19 +273,20 @@
         }
     ]
 }
-            </pre>
-        </div>
+            </pre
+        >
+      </div>
     </div>
 
     <div class="section">
-        <h2>Items</h2>
-        
-        <div class="endpoint">
-            <h3><span class="method get">GET</span> Get All Items</h3>
-            <div class="url">GET /api/items</div>
-            <p>Returns a list of all items</p>
-            <h4>Example Response:</h4>
-            <pre>
+      <h2>Items</h2>
+
+      <div class="endpoint">
+        <h3><span class="method get">GET</span> Get All Items</h3>
+        <div class="url">GET /api/items</div>
+        <p>Returns a list of all items</p>
+        <h4>Example Response:</h4>
+        <pre>
 {
     "id": 1,
     "name": "Áo Polo Nam Pique Mắt Chim Basic",
@@ -133,23 +301,24 @@
         "Thấm hút tốt"
     ]
 }
-            </pre>
-        </div>
+            </pre
+        >
+      </div>
 
-        <div class="endpoint">
-            <h3><span class="method get">GET</span> Get Item by ID</h3>
-            <div class="url">GET /api/items/{id}</div>
-            <p>Returns a single item by its ID</p>
-            <h4>Parameters:</h4>
-            <pre>id: number (path parameter)</pre>
-        </div>
+      <div class="endpoint">
+        <h3><span class="method get">GET</span> Get Item by ID</h3>
+        <div class="url">GET /api/items/{id}</div>
+        <p>Returns a single item by its ID</p>
+        <h4>Parameters:</h4>
+        <pre>id: number (path parameter)</pre>
+      </div>
 
-        <div class="endpoint">
-            <h3><span class="method post">POST</span> Create Item</h3>
-            <div class="url">POST /api/items</div>
-            <p>Creates a new item</p>
-            <h4>Request Body:</h4>
-            <pre>
+      <div class="endpoint">
+        <h3><span class="method post">POST</span> Create Item</h3>
+        <div class="url">POST /api/items</div>
+        <p>Creates a new item</p>
+        <h4>Request Body:</h4>
+        <pre>
 {
     "name": "Áo Polo Nam Pique Mắt Chim Basic",
     "price": 299000,
@@ -163,51 +332,259 @@
     ],
     "subcategoryId": 1
 }
-            </pre>
-        </div>
+            </pre
+        >
+      </div>
 
-        <div class="endpoint">
-            <h3><span class="method put">PUT</span> Update Item</h3>
-            <div class="url">PUT /api/items/{id}</div>
-            <p>Updates an existing item</p>
-            <h4>Parameters:</h4>
-            <pre>id: number (path parameter)</pre>
-            <h4>Request Body:</h4>
-            <pre>
+      <div class="endpoint">
+        <h3><span class="method put">PUT</span> Update Item</h3>
+        <div class="url">PUT /api/items/{id}</div>
+        <p>Updates an existing item</p>
+        <h4>Parameters:</h4>
+        <pre>id: number (path parameter)</pre>
+        <h4>Request Body:</h4>
+        <pre>
 {
     "name": "Áo Polo Nam Updated",
     "price": 399000,
     "discount": 15
 }
-            </pre>
-        </div>
+            </pre
+        >
+      </div>
 
-        <div class="endpoint">
-            <h3><span class="method delete">DELETE</span> Delete Item</h3>
-            <div class="url">DELETE /api/items/{id}</div>
-            <p>Deletes an item</p>
-            <h4>Parameters:</h4>
-            <pre>id: number (path parameter)</pre>
-        </div>
+      <div class="endpoint">
+        <h3><span class="method delete">DELETE</span> Delete Item</h3>
+        <div class="url">DELETE /api/items/{id}</div>
+        <p>Deletes an item</p>
+        <h4>Parameters:</h4>
+        <pre>id: number (path parameter)</pre>
+      </div>
     </div>
 
     <div class="section">
-        <h2>Subcategories</h2>
-        
-        <div class="endpoint">
-            <h3><span class="method get">GET</span> Get All Subcategories</h3>
-            <div class="url">GET /api/subcategories</div>
-            <p>Returns a list of all subcategories</p>
-            <h4>Example Response:</h4>
-            <pre>
+      <h2>Subcategories</h2>
+
+      <div class="endpoint">
+        <h3><span class="method get">GET</span> Get All Subcategories</h3>
+        <div class="url">GET /api/subcategories</div>
+        <p>Returns a list of all subcategories</p>
+        <h4>Example Response:</h4>
+        <pre>
 {
     "id": 1,
     "name": "Áo Polo",
     "img": "../img/shared/subcategory/ao_polo.png",
     "categoryId": 1
 }
-            </pre>
+            </pre
+        >
+      </div>
+    </div>
+
+    <div class="section">
+        <h2>Search Items</h2>
+        
+        <div class="search-form">
+            <div class="form-group">
+                <label for="searchName">Name:</label>
+                <input type="text" id="searchName" placeholder="Search by name...">
+            </div>
+            
+            <div class="form-group">
+                <label>Price Range:</label>
+                <input type="number" id="minPrice" placeholder="Min price">
+                <input type="number" id="maxPrice" placeholder="Max price">
+            </div>
+            
+            <div class="form-group">
+                <label for="minDiscount">Min Discount (%):</label>
+                <input type="number" id="minDiscount" placeholder="Minimum discount">
+            </div>
+            
+            <div class="form-group">
+                <label for="searchColor">Color:</label>
+                <input type="text" id="searchColor" placeholder="Search by color">
+            </div>
+            
+            <div class="form-group">
+                <label for="searchSize">Size:</label>
+                <input type="text" id="searchSize" placeholder="Search by size">
+            </div>
+            
+            <div class="form-group">
+                <label for="subcategoryId">Subcategory ID:</label>
+                <input type="number" id="subcategoryId" placeholder="Filter by subcategory">
+            </div>
+            
+            <button onclick="searchItems()" class="search-button">Search</button>
+        </div>
+        
+        <div id="searchResults" class="data-container">
+            Search results will appear here...
         </div>
     </div>
-</body>
+
+    <div class="section">
+        <h2>Quick Search</h2>
+        <div class="global-search">
+            <input type="text" id="globalSearch" placeholder="Search for anything...">
+            <button onclick="globalSearchItems()" class="search-button">
+                <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+        <div id="globalSearchResults" class="data-container">
+            Search results will appear here...
+        </div>
+    </div>
+
+    <script>
+        async function searchItems() {
+            const searchResults = document.getElementById('searchResults');
+            searchResults.innerHTML = 'Searching...';
+            
+            // Get values from inputs
+            const name = document.getElementById('searchName').value;
+            const minPrice = document.getElementById('minPrice').value;
+            const maxPrice = document.getElementById('maxPrice').value;
+            const minDiscount = document.getElementById('minDiscount').value;
+            const color = document.getElementById('searchColor').value;
+            const size = document.getElementById('searchSize').value;
+            const subcategoryId = document.getElementById('subcategoryId').value;
+            
+            // Build query string
+            const params = new URLSearchParams();
+            if (name) params.append('name', name);
+            if (minPrice) params.append('minPrice', minPrice);
+            if (maxPrice) params.append('maxPrice', maxPrice);
+            if (minDiscount) params.append('minDiscount', minDiscount);
+            if (color) params.append('color', color);
+            if (size) params.append('size', size);
+            if (subcategoryId) params.append('subcategoryId', subcategoryId);
+            
+            try {
+                const url = `http://localhost:9998/api/items/search?${params.toString()}`;
+                console.log('Searching:', url);
+                
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                // Format and display results
+                if (data.length === 0) {
+                    searchResults.innerHTML = '<p>No results found</p>';
+                } else {
+                    searchResults.innerHTML = `
+                        <h3>Found ${data.length} items:</h3>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                searchResults.innerHTML = `
+                    <div style="color: red; padding: 10px;">
+                        <h4>Error</h4>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Add event listeners for Enter key
+        document.querySelectorAll('.search-form input').forEach(input => {
+            input.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchItems();
+                }
+            });
+        });
+
+        let searchTimeout;
+
+        async function globalSearchItems() {
+            const searchInput = document.getElementById('globalSearch');
+            const resultsContainer = document.getElementById('globalSearchResults');
+            const searchTerm = searchInput.value.trim();
+
+            if (!searchTerm) {
+                resultsContainer.innerHTML = '<div class="no-results">Please enter a search term</div>';
+                return;
+            }
+
+            resultsContainer.innerHTML = '<div class="loading">Searching</div>';
+
+            try {
+                const url = `http://localhost:9998/api/items/search?query=${encodeURIComponent(searchTerm)}`;
+                console.log('Searching:', url);
+                
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+
+                if (data.length === 0) {
+                    resultsContainer.innerHTML = '<div class="no-results">No results found</div>';
+                    return;
+                }
+
+                // Format results in a more readable way
+                const resultsHtml = data.map(item => `
+                    <div class="result-item">
+                        <h4>${item.name}</h4>
+                        <p class="price">Price: ${formatPrice(item.price)} VND</p>
+                        ${item.discount ? `<p class="discount">Discount: ${item.discount}%</p>` : ''}
+                        <p>Colors: ${item.colors.join(', ')}</p>
+                        <p>Sizes: ${item.sizes.join(', ')}</p>
+                        <p>Sold: ${item.sold}</p>
+                    </div>
+                `).join('');
+
+                resultsContainer.innerHTML = `
+                    <h3>Found ${data.length} items:</h3>
+                    <div class="search-results">
+                        ${resultsHtml}
+                    </div>
+                `;
+
+            } catch (error) {
+                console.error('Error:', error);
+                resultsContainer.innerHTML = `
+                    <div style="color: red; padding: 10px;">
+                        <h4>Error</h4>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Format price with thousand separators
+        function formatPrice(price) {
+            return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        // Add event listener for Enter key
+        document.getElementById('globalSearch').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                globalSearchItems();
+            }
+        });
+
+        // Add debounce for search input
+        document.getElementById('globalSearch').addEventListener('input', function(e) {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                globalSearchItems();
+            }, 500); // Wait 500ms after user stops typing
+        });
+    </script>
+  </body>
 </html>

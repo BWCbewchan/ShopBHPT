@@ -9675,3 +9675,1067 @@ com.shop.bhpt.controllers.CategoryController#getAllCategories() mapped.
 2024-11-15T15:24:57.545+07:00 DEBUG 31204 --- [bhpt] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
 2024-11-15T15:24:57.547+07:00 DEBUG 31204 --- [bhpt] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.dto.CategoryDTO@1ac4032d, com.shop.bhpt.dto.CategoryDTO@f764db4, com.shop.bhpt.dto.Ca (truncated)...]
 2024-11-15T15:24:57.548+07:00 DEBUG 31204 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-15T16:55:24.719+07:00  INFO 31204 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-15T16:55:24.805+07:00  INFO 31204 --- [bhpt] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:55:24.847+07:00  INFO 31204 --- [bhpt] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-15T16:55:25.780+07:00  INFO 31204 --- [bhpt] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-15T16:55:26.116+07:00  INFO 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31204 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T16:55:26.116+07:00 DEBUG 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T16:55:26.118+07:00  INFO 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T16:55:26.968+07:00  INFO 31204 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T16:55:27.002+07:00  INFO 31204 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2024-11-15T16:55:27.261+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T16:55:27.265+07:00  INFO 31204 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T16:55:27.265+07:00  INFO 31204 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T16:55:27.303+07:00  INFO 31204 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T16:55:27.303+07:00  INFO 31204 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1177 ms
+2024-11-15T16:55:27.483+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T16:55:27.485+07:00  INFO 31204 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-15T16:55:28.560+07:00  INFO 31204 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77a4a13a
+2024-11-15T16:55:28.561+07:00  INFO 31204 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-15T16:55:30.997+07:00  INFO 31204 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:55:31.187+07:00  WARN 31204 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T16:55:31.332+07:00 DEBUG 31204 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2024-11-15T16:55:31.387+07:00 DEBUG 31204 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-15T16:55:31.414+07:00 DEBUG 31204 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-15T16:55:31.424+07:00 DEBUG 31204 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-15T16:55:31.447+07:00 DEBUG 31204 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-15T16:55:31.626+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-15T16:55:31.646+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-15T16:55:31.654+07:00  INFO 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.608 seconds (process running for 5459.883)
+2024-11-15T16:55:31.659+07:00  INFO 31204 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-15T16:55:33.041+07:00  INFO 31204 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-15T16:55:33.054+07:00  INFO 31204 --- [bhpt] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:55:33.056+07:00  INFO 31204 --- [bhpt] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-15T16:55:33.633+07:00  INFO 31204 --- [bhpt] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-15T16:55:33.778+07:00  INFO 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31204 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T16:55:33.779+07:00 DEBUG 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T16:55:33.779+07:00  INFO 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T16:55:34.048+07:00  INFO 31204 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T16:55:34.067+07:00  INFO 31204 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2024-11-15T16:55:34.184+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T16:55:34.185+07:00  INFO 31204 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T16:55:34.185+07:00  INFO 31204 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T16:55:34.212+07:00  INFO 31204 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T16:55:34.213+07:00  INFO 31204 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 431 ms
+2024-11-15T16:55:34.278+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T16:55:34.280+07:00  INFO 31204 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-11-15T16:55:35.398+07:00  INFO 31204 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30d166b5
+2024-11-15T16:55:35.399+07:00  INFO 31204 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-11-15T16:55:37.378+07:00  INFO 31204 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:55:37.571+07:00  WARN 31204 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T16:55:37.715+07:00 DEBUG 31204 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-15T16:55:37.792+07:00 DEBUG 31204 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-15T16:55:37.817+07:00 DEBUG 31204 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-15T16:55:37.830+07:00 DEBUG 31204 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-15T16:55:37.855+07:00 DEBUG 31204 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-15T16:55:38.043+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-15T16:55:38.068+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-15T16:55:38.077+07:00  INFO 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 4.338 seconds (process running for 5466.306)
+2024-11-15T16:55:38.081+07:00  INFO 31204 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-15T16:55:49.067+07:00  INFO 31204 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-15T16:55:49.087+07:00  INFO 31204 --- [bhpt] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:55:49.088+07:00  INFO 31204 --- [bhpt] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-11-15T16:55:50.035+07:00  INFO 31204 --- [bhpt] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-11-15T16:55:50.273+07:00  INFO 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31204 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T16:55:50.274+07:00 DEBUG 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T16:55:50.274+07:00  INFO 31204 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T16:55:50.732+07:00  INFO 31204 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T16:55:50.757+07:00  INFO 31204 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2024-11-15T16:55:50.994+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T16:55:50.996+07:00  INFO 31204 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T16:55:50.996+07:00  INFO 31204 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T16:55:51.029+07:00  INFO 31204 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T16:55:51.029+07:00  INFO 31204 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 749 ms
+2024-11-15T16:55:51.137+07:00  INFO 31204 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T16:55:51.138+07:00  INFO 31204 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-11-15T16:55:52.225+07:00  INFO 31204 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d339ab9
+2024-11-15T16:55:52.225+07:00  INFO 31204 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-11-15T16:56:06.886+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 30804 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T16:56:06.888+07:00 DEBUG 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T16:56:06.889+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T16:56:06.953+07:00  INFO 30804 --- [bhpt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-15T16:56:06.953+07:00  INFO 30804 --- [bhpt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-15T16:56:07.969+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T16:56:08.033+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2024-11-15T16:56:08.637+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T16:56:08.654+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T16:56:08.654+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T16:56:08.717+07:00  INFO 30804 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T16:56:08.718+07:00  INFO 30804 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1762 ms
+2024-11-15T16:56:09.428+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T16:56:09.477+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-15T16:56:11.049+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@435cda84
+2024-11-15T16:56:11.051+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-15T16:56:14.296+07:00  INFO 30804 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:56:14.816+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-15T16:56:15.920+07:00  WARN 30804 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T16:56:16.267+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-15T16:56:16.408+07:00 DEBUG 30804 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-15T16:56:16.463+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-15T16:56:16.509+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-15T16:56:16.564+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-15T16:56:16.885+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-15T16:56:16.947+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-15T16:56:16.959+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 10.475 seconds (process running for 11.531)
+2024-11-15T16:59:18.051+07:00  INFO 30804 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-15T16:59:18.072+07:00  INFO 30804 --- [bhpt] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:59:18.079+07:00  INFO 30804 --- [bhpt] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-15T16:59:19.022+07:00  INFO 30804 --- [bhpt] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-15T16:59:19.151+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 30804 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T16:59:19.151+07:00 DEBUG 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T16:59:19.152+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T16:59:19.499+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T16:59:19.539+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2024-11-15T16:59:19.787+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T16:59:19.789+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T16:59:19.790+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T16:59:19.830+07:00  INFO 30804 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T16:59:19.831+07:00  INFO 30804 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 674 ms
+2024-11-15T16:59:19.956+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T16:59:19.957+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-15T16:59:21.124+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64b44b23
+2024-11-15T16:59:21.124+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-15T16:59:23.031+07:00  INFO 30804 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:59:23.219+07:00  WARN 30804 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T16:59:23.379+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-15T16:59:23.424+07:00 DEBUG 30804 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-15T16:59:23.439+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-15T16:59:23.449+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-15T16:59:23.469+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-15T16:59:23.625+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-15T16:59:23.642+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-15T16:59:23.647+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 4.537 seconds (process running for 198.219)
+2024-11-15T16:59:23.651+07:00  INFO 30804 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-15T16:59:35.924+07:00  INFO 30804 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-15T16:59:35.924+07:00  INFO 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-15T16:59:35.925+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-15T16:59:35.925+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-15T16:59:35.925+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-15T16:59:35.926+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@15dc26c0
+2024-11-15T16:59:35.927+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@166fef22
+2024-11-15T16:59:35.927+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-15T16:59:35.928+07:00  INFO 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-11-15T16:59:35.936+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/items/search?query=s", parameters={masked}
+2024-11-15T16:59:35.945+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ItemController#searchItems(String)
+2024-11-15T16:59:35.977+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: jakarta.servlet.ServletException: Handler dispatch failed: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "char", invalid TypeElidedUnnamedFormalParameter
+	Syntax error on token "char", invalid LambdaBody
+
+2024-11-15T16:59:35.978+07:00 ERROR 30804 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "char", invalid TypeElidedUnnamedFormalParameter
+	Syntax error on token "char", invalid LambdaBody
+] with root cause
+
+java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "char", invalid TypeElidedUnnamedFormalParameter
+	Syntax error on token "char", invalid LambdaBody
+
+	at com.shop.bhpt.controllers.ItemController.searchItems(ItemController.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-11-15T16:59:35.989+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?query=s", parameters={masked}
+2024-11-15T16:59:35.991+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-15T16:59:36.006+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-15T16:59:36.008+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Nov 15 16:59:35 ICT 2024, status=500, error=Internal Server Error, trace=java.lang.Er (truncated)...]
+2024-11-15T16:59:36.052+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-11-15T16:59:51.409+07:00  INFO 30804 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-15T16:59:51.418+07:00  INFO 30804 --- [bhpt] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:59:51.418+07:00  INFO 30804 --- [bhpt] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-15T16:59:52.353+07:00  INFO 30804 --- [bhpt] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-15T16:59:52.468+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 30804 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T16:59:52.468+07:00 DEBUG 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T16:59:52.468+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T16:59:52.689+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T16:59:52.703+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2024-11-15T16:59:52.798+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T16:59:52.799+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T16:59:52.799+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T16:59:52.820+07:00  INFO 30804 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T16:59:52.820+07:00  INFO 30804 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 349 ms
+2024-11-15T16:59:52.864+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T16:59:52.865+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-11-15T16:59:53.972+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30d45604
+2024-11-15T16:59:53.972+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-11-15T16:59:55.782+07:00  INFO 30804 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T16:59:55.892+07:00  WARN 30804 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T16:59:55.960+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-15T16:59:55.992+07:00 DEBUG 30804 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-15T16:59:56.005+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-15T16:59:56.011+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-15T16:59:56.023+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-15T16:59:56.119+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-15T16:59:56.136+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-15T16:59:56.141+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.708 seconds (process running for 230.713)
+2024-11-15T16:59:56.143+07:00  INFO 30804 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-15T17:00:54.382+07:00  INFO 30804 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-15T17:00:54.394+07:00  INFO 30804 --- [bhpt] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T17:00:54.395+07:00  INFO 30804 --- [bhpt] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-11-15T17:00:55.328+07:00  INFO 30804 --- [bhpt] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-11-15T17:00:55.463+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 30804 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T17:00:55.464+07:00 DEBUG 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T17:00:55.464+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T17:00:55.791+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T17:00:55.808+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2024-11-15T17:00:55.946+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T17:00:55.947+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T17:00:55.947+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T17:00:55.971+07:00  INFO 30804 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T17:00:55.971+07:00  INFO 30804 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 504 ms
+2024-11-15T17:00:56.034+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T17:00:56.035+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-11-15T17:00:57.053+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bd5096a
+2024-11-15T17:00:57.054+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-11-15T17:00:58.799+07:00  INFO 30804 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T17:00:58.975+07:00  WARN 30804 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T17:00:59.067+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-15T17:00:59.098+07:00 DEBUG 30804 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-15T17:00:59.112+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-15T17:00:59.121+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-15T17:00:59.135+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-15T17:00:59.264+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-15T17:00:59.281+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-15T17:00:59.289+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.856 seconds (process running for 293.86)
+2024-11-15T17:00:59.290+07:00  INFO 30804 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-15T17:01:02.713+07:00  INFO 30804 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-15T17:01:02.722+07:00  INFO 30804 --- [bhpt] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T17:01:02.723+07:00  INFO 30804 --- [bhpt] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-11-15T17:01:03.468+07:00  INFO 30804 --- [bhpt] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-11-15T17:01:03.569+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 30804 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T17:01:03.569+07:00 DEBUG 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T17:01:03.569+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T17:01:03.780+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T17:01:03.795+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2024-11-15T17:01:03.910+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T17:01:03.910+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T17:01:03.910+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T17:01:03.942+07:00  INFO 30804 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T17:01:03.943+07:00  INFO 30804 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 372 ms
+2024-11-15T17:01:03.987+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T17:01:03.988+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-11-15T17:01:05.064+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76962c4b
+2024-11-15T17:01:05.064+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-11-15T17:01:06.898+07:00  INFO 30804 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T17:01:07.035+07:00  WARN 30804 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T17:01:07.135+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-15T17:01:07.176+07:00 DEBUG 30804 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-15T17:01:07.200+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-15T17:01:07.208+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-15T17:01:07.224+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-15T17:01:07.377+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-15T17:01:07.403+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-15T17:01:07.409+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.866 seconds (process running for 301.981)
+2024-11-15T17:01:07.412+07:00  INFO 30804 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-15T17:01:38.666+07:00  INFO 30804 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (0 additions, 0 deletions, 8 modifications)
+2024-11-15T17:01:38.676+07:00  INFO 30804 --- [bhpt] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T17:01:38.676+07:00  INFO 30804 --- [bhpt] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-11-15T17:01:39.601+07:00  INFO 30804 --- [bhpt] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-11-15T17:01:39.744+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 30804 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T17:01:39.744+07:00 DEBUG 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T17:01:39.745+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T17:01:40.201+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T17:01:40.222+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-11-15T17:01:40.378+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T17:01:40.379+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T17:01:40.379+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T17:01:40.408+07:00  INFO 30804 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T17:01:40.408+07:00  INFO 30804 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 660 ms
+2024-11-15T17:01:40.481+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T17:01:40.482+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-11-15T17:01:41.606+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fc5e902
+2024-11-15T17:01:41.606+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-11-15T17:01:43.443+07:00  INFO 30804 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T17:01:43.590+07:00  WARN 30804 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T17:01:43.672+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-15T17:01:43.711+07:00 DEBUG 30804 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-15T17:01:43.725+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-15T17:01:43.731+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-15T17:01:43.745+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-15T17:01:43.865+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-15T17:01:43.887+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-15T17:01:43.896+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 4.187 seconds (process running for 338.467)
+2024-11-15T17:01:43.899+07:00  INFO 30804 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-15T17:01:52.845+07:00  INFO 30804 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-15T17:01:52.845+07:00  INFO 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-15T17:01:52.845+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-15T17:01:52.846+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-15T17:01:52.846+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-15T17:01:52.847+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@39b433a3
+2024-11-15T17:01:52.848+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@46a0a33c
+2024-11-15T17:01:52.848+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-15T17:01:52.848+07:00  INFO 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-15T17:01:52.849+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/items/search?query=%C3%A1o", parameters={masked}
+2024-11-15T17:01:52.849+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ItemController#searchItems(String)
+2024-11-15T17:01:53.258+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-15T17:01:53.378+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:53.493+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:53.595+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:53.693+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:53.792+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:53.894+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-15T17:01:53.996+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-15T17:01:54.095+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-15T17:01:54.491+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:54.590+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:54.689+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:54.789+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:54.886+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:54.990+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:55.089+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:55.187+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:55.286+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-15T17:01:55.286+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.entities.Item@44b8d711, com.shop.bhpt.entities.Item@542a952a]]
+2024-11-15T17:01:55.308+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:55.406+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:55.506+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:55.605+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:55.702+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:55.803+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:55.907+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/items/search?query=%C3%A1o", parameters={masked}
+2024-11-15T17:01:55.907+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-15T17:01:55.907+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ItemController#searchItems(String)
+2024-11-15T17:01:56.104+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-15T17:01:56.201+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:56.303+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:56.402+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:56.500+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:56.598+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:01:56.696+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-15T17:01:56.795+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-15T17:01:56.893+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-15T17:01:57.287+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:57.386+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:57.487+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:57.588+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:57.686+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:57.784+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:57.883+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:57.981+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:58.082+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-15T17:01:58.082+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.entities.Item@533c3c1d, com.shop.bhpt.entities.Item@6a55dd4e]]
+2024-11-15T17:01:58.083+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:58.183+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:58.283+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:58.382+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:58.482+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:01:58.579+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:01:58.678+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-15T17:02:07.467+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/items/search?query=qu%E1%BA%A7n", parameters={masked}
+2024-11-15T17:02:07.468+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ItemController#searchItems(String)
+2024-11-15T17:02:07.761+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-15T17:02:07.859+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:02:07.958+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:02:08.059+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:02:08.156+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:02:08.258+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-15T17:02:08.356+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-15T17:02:08.454+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-15T17:02:08.553+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-15T17:02:08.947+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:02:09.051+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:02:09.149+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:02:09.248+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:02:09.347+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:02:09.447+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:02:09.548+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:02:09.647+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:02:09.746+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-15T17:02:09.746+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.entities.Item@7015c8af, com.shop.bhpt.entities.Item@272b519a]]
+2024-11-15T17:02:09.746+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:02:09.845+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:02:09.946+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:02:10.046+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:02:10.150+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-15T17:02:10.251+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-15T17:02:10.350+07:00 DEBUG 30804 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-15T17:02:15.772+07:00  INFO 30804 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-15T17:02:15.788+07:00  INFO 30804 --- [bhpt] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T17:02:15.789+07:00  INFO 30804 --- [bhpt] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-11-15T17:02:16.746+07:00  INFO 30804 --- [bhpt] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-11-15T17:02:16.892+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 30804 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T17:02:16.893+07:00 DEBUG 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T17:02:16.893+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T17:02:17.288+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T17:02:17.308+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2024-11-15T17:02:17.591+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T17:02:17.593+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T17:02:17.593+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T17:02:17.645+07:00  INFO 30804 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T17:02:17.645+07:00  INFO 30804 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 750 ms
+2024-11-15T17:02:17.734+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T17:02:17.736+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-11-15T17:02:18.831+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5303137f
+2024-11-15T17:02:18.831+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-11-15T17:02:20.649+07:00  INFO 30804 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T17:02:20.797+07:00  WARN 30804 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-15T17:02:20.897+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2024-11-15T17:02:20.935+07:00 DEBUG 30804 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-15T17:02:20.960+07:00 DEBUG 30804 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-15T17:02:20.968+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-15T17:02:20.984+07:00 DEBUG 30804 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-15T17:02:21.114+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-15T17:02:21.137+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-15T17:02:21.143+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 4.28 seconds (process running for 375.715)
+2024-11-15T17:02:21.145+07:00  INFO 30804 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-15T17:02:22.540+07:00  INFO 30804 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-15T17:02:22.552+07:00  INFO 30804 --- [bhpt] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15T17:02:22.553+07:00  INFO 30804 --- [bhpt] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-11-15T17:02:23.032+07:00  INFO 30804 --- [bhpt] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-11-15T17:02:23.187+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 30804 (D:\A.N4K1\JAVA(WWW)\bhpt\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\bhpt)
+2024-11-15T17:02:23.187+07:00 DEBUG 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-15T17:02:23.188+07:00  INFO 30804 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-15T17:02:23.538+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-15T17:02:23.562+07:00  INFO 30804 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-11-15T17:02:23.715+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-15T17:02:23.716+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-15T17:02:23.716+07:00  INFO 30804 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-15T17:02:23.746+07:00  INFO 30804 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-15T17:02:23.746+07:00  INFO 30804 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 554 ms
+2024-11-15T17:02:23.827+07:00  INFO 30804 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-15T17:02:23.829+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-11-15T17:02:24.789+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d019505
+2024-11-15T17:02:24.790+07:00  INFO 30804 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.

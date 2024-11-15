@@ -58,4 +58,78 @@ public class Item {
     @CollectionTable(name = "item_characteristics", joinColumns = @JoinColumn(name = "item_id"))
     @Column(name = "characteristic")
     private Set<String> characteristics;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getSold() {
+		return sold;
+	}
+
+	public void setSold(int sold) {
+		this.sold = sold;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public int getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(int discount) {
+		this.discount = discount;
+	}
+
+	public Subcategory getSubcategory() {
+		return subcategory;
+	}
+
+	public void setSubcategory(Subcategory subcategory) {
+		this.subcategory = subcategory;
+	}
+
+	public Set<String> getColors() {
+		return colors;
+	}
+
+	public void setColors(Set<String> colors) {
+		this.colors = colors;
+	}
+
+	public Set<String> getSizes() {
+		return sizes;
+	}
+
+	public void setSizes(Set<String> sizes) {
+		this.sizes = sizes;
+	}
+
+	public Set<String> getCharacteristics() {
+		return characteristics;
+	}
+
+	public void setCharacteristics(Set<String> characteristics) {
+		this.characteristics = characteristics;
+	}
+    
+    
 }
