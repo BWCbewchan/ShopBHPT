@@ -70,4 +70,14 @@ public class ItemController {
             return false;
         }
     }
+
+    @GetMapping("/category/{categoryId}")
+    public List<Item> getItemsByCategory(@PathVariable Long categoryId) {
+        return itemRepository.findByCategoryId(categoryId);
+    }
+
+    @GetMapping("/subcategory/{subcategoryId}")
+    public List<Item> getItemsBySubcategory(@PathVariable Long subcategoryId) {
+        return itemRepository.findBySubcategoryId(subcategoryId);
+    }
 } 

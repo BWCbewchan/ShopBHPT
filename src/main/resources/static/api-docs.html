@@ -200,6 +200,29 @@
 }
           </pre>
         </div>
+
+        <div class="endpoint">
+          <h3><span class="method get">GET</span> Get Items By Category</h3>
+          <div class="url">GET /api/items/category/{categoryId}</div>
+          <p>Returns items for a specific category</p>
+
+          <h4>Test Category Items:</h4>
+          <div class="category-selector">
+            <select id="categorySelect" style="padding: 8px; margin-right: 10px; border-radius: 4px; border: 1px solid #ddd;">
+              <option value="">Select a category...</option>
+            </select>
+            <select id="subcategorySelect" style="padding: 8px; margin-right: 10px; border-radius: 4px; border: 1px solid #ddd;">
+              <option value="">Select a subcategory...</option>
+            </select>
+            <button onclick="getItemsByCategory()" 
+                    style="padding: 8px 15px; background: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+              Get Items
+            </button>
+          </div>
+          <div id="categoryItemsResults" class="data-container">
+            Select a category to view items...
+          </div>
+        </div>
       </div>
     </div>
 
@@ -386,6 +409,119 @@
           globalSearchItems();
         }
       });
+
+      // Load categories when page loads
+      async function loadCategories() {
+        try {
+          const response = await fetch('http://localhost:9998/api/shop/all');
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          
+          const categories = await response.json();
+          const categorySelect = document.getElementById('categorySelect');
+          
+          // Clear existing options
+          categorySelect.innerHTML = '<option value="">Select a category...</option>';
+          
+          // Add new options
+          categories.forEach(category => {
+            categorySelect.innerHTML += `
+              <option value="${category.id}">${category.name}</option>
+            `;
+          });
+        } catch (error) {
+          console.error('Error loading categories:', error);
+        }
+      }
+
+      // Update subcategories when category is selected
+      document.getElementById('categorySelect').addEventListener('change', async function() {
+        const categoryId = this.value;
+        const subcategorySelect = document.getElementById('subcategorySelect');
+        subcategorySelect.innerHTML = '<option value="">Select a subcategory...</option>';
+        
+        if (!categoryId) return;
+        
+        try {
+          const response = await fetch('http://localhost:9998/api/shop/all');
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          
+          const categories = await response.json();
+          const category = categories.find(c => c.id == categoryId);
+          
+          if (category && category.subcategories) {
+            category.subcategories.forEach(sub => {
+              subcategorySelect.innerHTML += `
+                <option value="${sub.id}">${sub.name}</option>
+              `;
+            });
+          }
+        } catch (error) {
+          console.error('Error loading subcategories:', error);
+        }
+      });
+
+      // Get items by category/subcategory
+      async function getItemsByCategory() {
+        const categoryId = document.getElementById('categorySelect').value;
+        const subcategoryId = document.getElementById('subcategorySelect').value;
+        const resultsContainer = document.getElementById('categoryItemsResults');
+        
+        if (!categoryId && !subcategoryId) {
+          resultsContainer.innerHTML = 'Please select a category or subcategory';
+          return;
+        }
+        
+        resultsContainer.innerHTML = 'Loading items...';
+        
+        try {
+          let url;
+          if (subcategoryId) {
+            url = `http://localhost:9998/api/items/subcategory/${subcategoryId}`;
+          } else {
+            url = `http://localhost:9998/api/items/category/${categoryId}`;
+          }
+          
+          const response = await fetch(url);
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          
+          const items = await response.json();
+          
+          if (items.length === 0) {
+            resultsContainer.innerHTML = 'No items found for this category';
+            return;
+          }
+          
+          // Format and display results
+          const itemsHtml = items.map(item => `
+            <div class="result-item" style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+              <h4>${item.name}</h4>
+              <p>Price: ${formatPrice(item.price)} VND</p>
+              ${item.discount ? `<p>Discount: ${item.discount}%</p>` : ''}
+              <p>Colors: ${item.colors.join(', ')}</p>
+              <p>Sizes: ${item.sizes.join(', ')}</p>
+              <p>Sold: ${item.sold}</p>
+            </div>
+          `).join('');
+          
+          resultsContainer.innerHTML = `
+            <h4>Found ${items.length} items:</h4>
+            <div class="items-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px;">
+              ${itemsHtml}
+            </div>
+          `;
+        } catch (error) {
+          console.error('Error:', error);
+          resultsContainer.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+        }
+      }
+
+      // Format price with thousand separators
+      function formatPrice(price) {
+        return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+
+      // Load categories when page loads
+      document.addEventListener('DOMContentLoaded', loadCategories);
     </script>
   </body>
 </html>

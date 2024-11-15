@@ -37,4 +37,8 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 		@Param("minDiscount") Integer minDiscount,
 		@Param("subcategoryId") Long subcategoryId
 	);
+	
+	// Tìm theo category thông qua subcategory
+	@Query("SELECT i FROM Item i WHERE i.subcategory.category.id = :categoryId")
+	List<Item> findByCategoryId(@Param("categoryId") Long categoryId);
 } 
