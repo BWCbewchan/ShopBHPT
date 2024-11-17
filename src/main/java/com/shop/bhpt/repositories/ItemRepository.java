@@ -12,7 +12,7 @@ import com.shop.bhpt.entities.Item;
 @Repository
 public interface ItemRepository extends JpaRepository<Item, Long> {
 
-	List<Item> findBySubcategoryId(Long subcategoryId);
+	List<Item> findBySubcategory_Id(Long subcategoryId);
 	
 	// Tìm theo tên (case insensitive)
 	List<Item> findByNameContainingIgnoreCase(String name);
@@ -41,4 +41,8 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 	// Tìm theo category thông qua subcategory
 	@Query("SELECT i FROM Item i WHERE i.subcategory.category.id = :categoryId")
 	List<Item> findByCategoryId(@Param("categoryId") Long categoryId);
+	
+	// Sử dụng @Query
+	@Query("SELECT i FROM Item i WHERE i.subcategory.id = :subcategoryId")
+	List<Item> findBySubcategoryId(@Param("subcategoryId") Long subcategoryId);
 } 

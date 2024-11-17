@@ -1,0 +1,20 @@
+[
+	{
+		"username": "thanhcanhit",
+		"password": "123",
+		"name": "Nguyễn Thanh Cảnh",
+		"sdt": "0322290334"
+	},
+	{
+		"username": "xuannamit",
+		"password": "123",
+		"name": "Nguyễn Xuân Nam",
+		"sdt": "0323390114"
+	},
+	{
+		"username": "sa",
+		"password": "sapassword",
+		"name": "Tài khoản ảo",
+		"sdt": "03999999999"
+	}
+]

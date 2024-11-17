@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BHPT API Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #f5f5f5;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .endpoint {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      .method {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 4px;
+        color: white;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      .get {
+        background-color: #61affe;
+      }
+      .post {
+        background-color: #49cc90;
+      }
+      .put {
+        background-color: #fca130;
+      }
+      .delete {
+        background-color: #f93e3e;
+      }
+
+      .url {
+        color: #0066cc;
+        font-family: monospace;
+        margin: 10px 0;
+        padding: 8px;
+        background: #f8f9fa;
+        border-radius: 4px;
+      }
+
+      pre {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 4px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      .params-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+      }
+
+      .params-table th, .params-table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      .params-table th {
+        background: #f8f9fa;
+      }
+
+      /* Navigation Styles */
+      .nav {
+        background: #333;
+        padding: 15px 0;
+        margin-bottom: 30px;
+        border-radius: 8px;
+      }
+
+      .nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: background 0.3s;
+      }
+
+      .nav a:hover {
+        background: #555;
+      }
+
+      .nav a.active {
+        background: #4CAF50;
+      }
+
+      /* Content Sections */
+      .content-section {
+        display: none;
+      }
+
+      .content-section.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>BHPT API Documentation</h1>
+      <p>RESTful API documentation for BHPT E-commerce Platform</p>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#" class="nav-link active" data-section="get">GET</a></li>
+        <li><a href="#" class="nav-link" data-section="post">POST</a></li>
+        <li><a href="#" class="nav-link" data-section="put">PUT</a></li>
+        <li><a href="#" class="nav-link" data-section="delete">DELETE</a></li>
+        <li><a href="#" class="nav-link" data-section="search">Search</a></li>
+      </ul>
+    </nav>
+
+    <!-- GET Section -->
+    <div id="get-section" class="content-section active">
+      <div class="section">
+        <h2>GET Endpoints</h2>
+        
+        <div class="endpoint">
+          <h3><span class="method get">GET</span> Get All Categories</h3>
+          <div class="url">GET /api/shop/all</div>
+          <p>Returns a list of all categories with their subcategories</p>
+          <h4>Response Example:</h4>
+          <pre>
+{
+    "id": 1,
+    "name": "Áo nam",
+    "subcategories": [
+        {
+            "id": 1,
+            "name": "Áo Polo",
+            "img": "../img/shared/subcategory/ao_polo.png"
+        }
+    ]
+}
+          </pre>
+        </div>
+
+        <div class="endpoint">
+          <h3><span class="method get">GET</span> Get All Items</h3>
+          <div class="url">GET /api/items</div>
+          <p>Returns a list of all items</p>
+          <h4>Response Example:</h4>
+          <pre>
+{
+    "id": 1,
+    "name": "Áo Polo Nam Pique Mắt Chim Basic",
+    "sold": 621,
+    "price": 299000,
+    "discount": 10,
+    "colors": ["Xanh", "Đen", "Trắng"],
+    "sizes": ["M", "L", "XL"]
+}
+          </pre>
+        </div>
+
+        <div class="endpoint">
+          <h3><span class="method get">GET</span> Get Items By Category</h3>
+          <div class="url">GET /api/items/category/{categoryId}</div>
+          <p>Returns items for a specific category</p>
+
+          <h4>Test Category Items:</h4>
+          <div class="category-selector">
+            <select id="categorySelect" style="padding: 8px; margin-right: 10px; border-radius: 4px; border: 1px solid #ddd;">
+              <option value="">Select a category...</option>
+            </select>
+            <select id="subcategorySelect" style="padding: 8px; margin-right: 10px; border-radius: 4px; border: 1px solid #ddd;">
+              <option value="">Select a subcategory...</option>
+            </select>
+            <button onclick="getItemsByCategory()" 
+                    style="padding: 8px 15px; background: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+              Get Items
+            </button>
+          </div>
+          <div id="categoryItemsResults" class="data-container">
+            Select a category to view items...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST Section -->
+    <div id="post-section" class="content-section">
+      <div class="section">
+        <h2>POST Endpoints</h2>
+        
+        <div class="endpoint">
+          <h3><span class="method post">POST</span> Create New Item</h3>
+          <div class="url">POST /api/items</div>
+          <p>Creates a new item</p>
+          <h4>Request Body:</h4>
+          <pre>
+{
+    "name": "Áo Polo Nam Mới",
+    "price": 299000,
+    "discount": 10,
+    "colors": ["Xanh", "Đen"],
+    "sizes": ["M", "L", "XL"],
+    "subcategoryId": 1
+}
+          </pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- PUT Section -->
+    <div id="put-section" class="content-section">
+      <div class="section">
+        <h2>PUT Endpoints</h2>
+        
+        <div class="endpoint">
+          <h3><span class="method put">PUT</span> Update Item</h3>
+          <div class="url">PUT /api/items/{id}</div>
+          <p>Updates an existing item</p>
+          <h4>Parameters:</h4>
+          <table class="params-table">
+            <tr>
+              <th>Parameter</th>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>number</td>
+              <td>Yes</td>
+              <td>Item ID to update</td>
+            </tr>
+          </table>
+          <h4>Request Body:</h4>
+          <pre>
+{
+    "name": "Áo Polo Nam Updated",
+    "price": 399000,
+    "discount": 15
+}
+          </pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- DELETE Section -->
+    <div id="delete-section" class="content-section">
+      <div class="section">
+        <h2>DELETE Endpoints</h2>
+        
+        <div class="endpoint">
+          <h3><span class="method delete">DELETE</span> Delete Item</h3>
+          <div class="url">DELETE /api/items/{id}</div>
+          <p>Deletes an item</p>
+          <h4>Parameters:</h4>
+          <table class="params-table">
+            <tr>
+              <th>Parameter</th>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>number</td>
+              <td>Yes</td>
+              <td>Item ID to delete</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Section -->
+    <div id="search-section" class="content-section">
+      <div class="section">
+        <h2>Search API</h2>
+        
+        <div class="endpoint">
+          <h3><span class="method get">GET</span> Search Items</h3>
+          <div class="url">GET /api/items/search?query={searchTerm}</div>
+          <p>Search items by name, color, size, or price range</p>
+          
+          <h4>Query Parameters:</h4>
+          <table class="params-table">
+            <tr>
+              <th>Parameter</th>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>query</td>
+              <td>string</td>
+              <td>Yes</td>
+              <td>Search term to filter items</td>
+            </tr>
+          </table>
+          
+          <h4>Test Search:</h4>
+          <div class="global-search" style="display: flex; gap: 10px; margin: 15px 0;">
+            <input type="text" id="globalSearch" 
+                   placeholder="Search for anything..." 
+                   style="flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+            <button onclick="globalSearchItems()" 
+                    style="padding: 8px 15px; background: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+              <i class="fas fa-search"></i> Search
+            </button>
+          </div>
+          <div id="globalSearchResults" class="data-container">
+            Search results will appear here...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Navigation functionality
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Remove active class from all links and sections
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+          
+          // Add active class to clicked link and corresponding section
+          this.classList.add('active');
+          document.getElementById(`${this.dataset.section}-section`).classList.add('active');
+        });
+      });
+
+      // Search functionality
+      async function globalSearchItems() {
+        const searchInput = document.getElementById('globalSearch');
+        const resultsContainer = document.getElementById('globalSearchResults');
+        const searchTerm = searchInput.value.trim();
+
+        if (!searchTerm) {
+          resultsContainer.innerHTML = '<p>Please enter a search term</p>';
+          return;
+        }
+
+        resultsContainer.innerHTML = 'Searching...';
+
+        try {
+          const url = `http://localhost:9998/api/items/search?query=${encodeURIComponent(searchTerm)}`;
+          const response = await fetch(url);
+          
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          
+          const data = await response.json();
+          resultsContainer.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+          
+        } catch (error) {
+          console.error('Error:', error);
+          resultsContainer.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+        }
+      }
+
+      // Search on Enter key
+      document.getElementById('globalSearch')?.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          globalSearchItems();
+        }
+      });
+
+      // Load categories when page loads
+      async function loadCategories() {
+        try {
+          const response = await fetch('http://localhost:9998/api/shop/all');
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          
+          const categories = await response.json();
+          const categorySelect = document.getElementById('categorySelect');
+          
+          // Clear existing options
+          categorySelect.innerHTML = '<option value="">Select a category...</option>';
+          
+          // Add new options
+          categories.forEach(category => {
+            categorySelect.innerHTML += `
+              <option value="${category.id}">${category.name}</option>
+            `;
+          });
+        } catch (error) {
+          console.error('Error loading categories:', error);
+        }
+      }
+
+      // Update subcategories when category is selected
+      document.getElementById('categorySelect').addEventListener('change', async function() {
+        const categoryId = this.value;
+        const subcategorySelect = document.getElementById('subcategorySelect');
+        subcategorySelect.innerHTML = '<option value="">Select a subcategory...</option>';
+        
+        if (!categoryId) return;
+        
+        try {
+          const response = await fetch('http://localhost:9998/api/shop/all');
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          
+          const categories = await response.json();
+          const category = categories.find(c => c.id == categoryId);
+          
+          if (category && category.subcategories) {
+            category.subcategories.forEach(sub => {
+              subcategorySelect.innerHTML += `
+                <option value="${sub.id}">${sub.name}</option>
+              `;
+            });
+          }
+        } catch (error) {
+          console.error('Error loading subcategories:', error);
+        }
+      });
+
+      // Get items by category/subcategory
+      async function getItemsByCategory() {
+        const categoryId = document.getElementById('categorySelect').value;
+        const subcategoryId = document.getElementById('subcategorySelect').value;
+        const resultsContainer = document.getElementById('categoryItemsResults');
+        
+        if (!categoryId && !subcategoryId) {
+          resultsContainer.innerHTML = 'Please select a category or subcategory';
+          return;
+        }
+        
+        resultsContainer.innerHTML = 'Loading items...';
+        
+        try {
+          let url;
+          if (subcategoryId) {
+            url = `http://localhost:9998/api/items/subcategory/${subcategoryId}`;
+          } else {
+            url = `http://localhost:9998/api/items/category/${categoryId}`;
+          }
+          
+          const response = await fetch(url);
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          
+          const items = await response.json();
+          
+          if (items.length === 0) {
+            resultsContainer.innerHTML = 'No items found for this category';
+            return;
+          }
+          
+          // Format and display results
+          const itemsHtml = items.map(item => `
+            <div class="result-item" style="margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+              <h4>${item.name}</h4>
+              <p>Price: ${formatPrice(item.price)} VND</p>
+              ${item.discount ? `<p>Discount: ${item.discount}%</p>` : ''}
+              <p>Colors: ${item.colors.join(', ')}</p>
+              <p>Sizes: ${item.sizes.join(', ')}</p>
+              <p>Sold: ${item.sold}</p>
+            </div>
+          `).join('');
+          
+          resultsContainer.innerHTML = `
+            <h4>Found ${items.length} items:</h4>
+            <div class="items-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px;">
+              ${itemsHtml}
+            </div>
+          `;
+        } catch (error) {
+          console.error('Error:', error);
+          resultsContainer.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+        }
+      }
+
+      // Format price with thousand separators
+      function formatPrice(price) {
+        return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+
+      // Load categories when page loads
+      document.addEventListener('DOMContentLoaded', loadCategories);
+    </script>
+  </body>
+</html>

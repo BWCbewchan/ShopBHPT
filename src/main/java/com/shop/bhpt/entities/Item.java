@@ -1,9 +1,9 @@
 package com.shop.bhpt.entities;
 
-import java.util.List;
 import java.util.Set;
 
-import jakarta.persistence.CascadeType;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.CollectionTable;
 import jakarta.persistence.Column;
 import jakarta.persistence.ElementCollection;
@@ -13,15 +13,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Table(name = "items")
@@ -129,6 +125,10 @@ public class Item {
 
 	public void setCharacteristics(Set<String> characteristics) {
 		this.characteristics = characteristics;
+	}
+
+	public Long getSubcategoryId() {
+		return subcategory != null ? subcategory.getId() : null;
 	}
     
     

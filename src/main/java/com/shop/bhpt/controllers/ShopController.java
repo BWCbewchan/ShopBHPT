@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.shop.bhpt.dto.CategoryDTO;
+import com.shop.bhpt.dto.ItemDTO;
 import com.shop.bhpt.dto.SubcategoryDTO;
 import com.shop.bhpt.entities.Category;
 import com.shop.bhpt.entities.Item;
@@ -68,8 +69,26 @@ public class ShopController {
     }
     
     @GetMapping("/items")
-    public List<Item> getAllItems() {
+    public List<ItemDTO> getAllItems() {
         List<Item> items = itemRepository.findAll();
-        return items;
+        return items.stream()
+            .map(this::convertToItemDTO)
+            .collect(Collectors.toList());
+    }
+    
+    private ItemDTO convertToItemDTO(Item item) {
+        ItemDTO dto = new ItemDTO();
+        dto.setId(item.getId());
+        dto.setName(item.getName());
+        dto.setSold(item.getSold());
+        dto.setPrice(item.getPrice());
+        dto.setDiscount(item.getDiscount());
+        dto.setSubcategoryId(item.getSubcategory() != null ? item.getSubcategory().getId() : null);
+        
+        dto.setColors(new ArrayList<>(item.getColors()));
+        dto.setSizes(new ArrayList<>(item.getSizes()));
+        dto.setCharacteristics(new ArrayList<>(item.getCharacteristics()));
+        
+        return dto;
     }
 } 
