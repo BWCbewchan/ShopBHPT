@@ -223,6 +223,56 @@
             Select a category to view items...
           </div>
         </div>
+
+        <div class="endpoint">
+          <h3><span class="method get">GET</span> Get Item by ID</h3>
+          <div class="url">GET /api/items/{id}</div>
+          <p>Returns a specific item by its ID</p>
+          <h4>Parameters:</h4>
+          <table class="params-table">
+            <tr>
+              <th>Parameter</th>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>number</td>
+              <td>Yes</td>
+              <td>Item ID to retrieve</td>
+            </tr>
+          </table>
+          <h4>Response Example:</h4>
+          <pre>
+{
+    "id": 1,
+    "name": "Áo Polo Nam Pique Mắt Chim Basic",
+    "sold": 621,
+    "price": 299000,
+    "discount": 10,
+    "subcategoryId": 1,
+    "colors": ["Xanh", "Đen", "Trắng"],
+    "sizes": ["M", "L", "XL"],
+    "characteristics": [
+        "Vải mắt chim thông thoáng",
+        "Thấm hút tốt"
+    ]
+}
+          </pre>
+        </div>
+
+        <div class="endpoint">
+          <h3><span class="method get">GET</span> Get All Categories</h3>
+          <div class="url">GET /api/categories</div>
+          <p>Returns a list of all categories</p>
+        </div>
+
+        <div class="endpoint">
+          <h3><span class="method get">GET</span> Get All Subcategories</h3>
+          <div class="url">GET /api/subcategories</div>
+          <p>Returns a list of all subcategories</p>
+        </div>
       </div>
     </div>
 
