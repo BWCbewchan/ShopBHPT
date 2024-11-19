@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -59,7 +60,11 @@ public class ShopController {
 
 		return categoryDTO;
 	}
-
+	@GetMapping("items/{id}")
+    public ItemDTO getItemById(@PathVariable Long id) {
+        Item item = itemRepository.findById(id).orElse(null);
+        return convertToItemDTO(item);
+    }
 	@GetMapping("/items")
 	public List<ItemDTO> getAllItems() {
 	    List<Item> items = itemRepository.findAll();

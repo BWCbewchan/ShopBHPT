@@ -15966,3 +15966,3395 @@ Caused by: java.lang.ClassNotFoundException: Item
 2024-11-19T22:45:18.363+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
 2024-11-19T22:45:18.371+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.834 seconds (process running for 823.829)
 2024-11-19T22:45:18.373+07:00  INFO 5444 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T22:45:58.303+07:00  INFO 5444 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-19T22:45:58.303+07:00  INFO 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-19T22:45:58.303+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-19T22:45:58.303+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-19T22:45:58.303+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-19T22:45:58.306+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@48b77ff0
+2024-11-19T22:45:58.306+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@43411cbc
+2024-11-19T22:45:58.306+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-19T22:45:58.306+07:00  INFO 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-19T22:45:58.306+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/shop/all", parameters={}
+2024-11-19T22:45:58.307+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ShopController#getAllCategories()
+2024-11-19T22:45:58.590+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name 
+    from
+        categories c1_0
+2024-11-19T22:45:58.685+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:45:58.780+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:45:58.874+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:45:58.969+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:45:59.064+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:45:59.158+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:45:59.534+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-19T22:45:59.534+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.dto.CategoryDTO@78d413ac, com.shop.bhpt.dto.CategoryDTO@6d94debc, com.shop.bhpt.dto.C (truncated)...]
+2024-11-19T22:45:59.549+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T22:47:04.419+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/shop/items", parameters={}
+2024-11-19T22:47:04.419+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ShopController#getAllItems()
+2024-11-19T22:47:04.698+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-19T22:47:04.791+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:47:04.885+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:47:04.979+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:47:05.072+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:47:05.164+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:47:05.260+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:47:05.353+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:47:05.446+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:47:05.816+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:05.909+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:06.001+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:06.094+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:06.187+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:06.280+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:06.372+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:06.464+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:06.561+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:06.654+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:06.749+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:06.841+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:06.934+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:07.026+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:07.119+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:07.211+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:07.304+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:07.396+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:07.488+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:07.581+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:07.674+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:07.766+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:07.859+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:07.952+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:08.045+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:08.138+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:08.230+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:08.323+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:08.418+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:08.509+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:08.603+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:08.695+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:08.787+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:08.880+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:08.973+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:09.064+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:09.158+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:09.251+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:09.343+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:09.436+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:09.528+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:09.620+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:09.714+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:09.807+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:09.898+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:09.991+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:10.084+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:10.176+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:10.269+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:10.362+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:10.456+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:10.549+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:10.641+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:10.734+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:10.827+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:10.919+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:47:11.012+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:47:11.104+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-19T22:47:11.104+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.dto.ItemDTO@2bf96c96, com.shop.bhpt.dto.ItemDTO@72cdbf31, com.shop.bhpt.dto.ItemDTO@6 (truncated)...]
+2024-11-19T22:47:11.109+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T22:48:32.077+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/items", parameters={}
+2024-11-19T22:48:32.078+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ItemController#getAllItems()
+2024-11-19T22:48:32.354+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-19T22:48:32.448+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:48:32.541+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:48:32.635+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:48:32.728+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:48:32.822+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:48:32.915+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:48:33.007+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:48:33.100+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:48:33.469+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-19T22:48:33.469+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.entities.Item@6250a0dd, com.shop.bhpt.entities.Item@4c813a43, com.shop.bhpt.entities. (truncated)...]
+2024-11-19T22:48:33.476+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:33.570+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:33.662+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:33.755+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:33.848+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:33.939+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:34.032+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:34.126+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:34.217+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:34.310+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:34.403+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:34.496+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:34.589+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:34.681+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:34.775+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:34.867+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:34.960+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:35.053+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:35.145+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:35.242+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:35.335+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:35.427+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:35.520+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:35.612+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:35.705+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:35.796+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:35.888+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:35.981+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:36.074+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:36.166+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:36.259+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:36.353+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:36.445+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:36.539+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:36.632+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:36.724+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:36.817+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:36.909+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:37.003+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:37.094+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:37.187+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:37.279+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:37.372+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:37.465+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:37.557+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:37.649+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:37.744+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:37.838+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:37.931+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:38.026+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:38.119+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:38.212+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:38.303+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:38.396+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:38.489+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:38.580+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:48:38.672+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:48:38.767+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T22:49:16.248+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/shop/items", parameters={}
+2024-11-19T22:49:16.249+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ShopController#getAllItems()
+2024-11-19T22:49:16.528+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-19T22:49:16.620+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:49:16.713+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:49:16.806+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:49:16.899+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:49:16.993+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:49:17.086+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:17.179+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:17.271+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:17.641+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:17.733+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:17.826+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:17.917+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:18.010+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:18.101+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:18.195+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:18.287+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:18.378+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:18.470+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:18.568+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:18.660+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:18.752+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:18.844+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:18.937+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:19.031+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:19.123+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:19.216+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:19.308+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:19.400+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:19.492+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:19.585+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:19.677+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:19.769+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:19.861+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:19.953+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:20.045+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:20.137+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:20.229+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:20.321+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:20.414+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:20.506+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:20.598+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:20.690+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:20.782+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:20.875+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:20.967+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:21.059+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:21.151+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:21.243+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:21.335+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:21.427+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:21.518+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:21.611+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:21.704+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:21.795+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:21.887+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:21.979+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:22.071+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:22.163+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:22.256+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:22.348+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:22.440+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:22.532+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:22.624+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:22.717+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:49:22.810+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:49:22.903+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-19T22:49:22.903+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.dto.ItemDTO@1eada68d, com.shop.bhpt.dto.ItemDTO@212d2d08, com.shop.bhpt.dto.ItemDTO@1 (truncated)...]
+2024-11-19T22:49:22.905+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T22:49:31.082+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/categories", parameters={}
+2024-11-19T22:49:31.082+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.CategoryController#getAllCategories()
+2024-11-19T22:49:31.361+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name 
+    from
+        categories c1_0
+2024-11-19T22:49:31.454+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:31.548+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:31.642+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:31.734+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:31.827+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:31.919+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:32.289+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-19T22:49:32.289+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.dto.CategoryDTO@ca37205, com.shop.bhpt.dto.CategoryDTO@211897f4, com.shop.bhpt.dto.Ca (truncated)...]
+2024-11-19T22:49:32.290+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T22:49:38.856+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/subcategories", parameters={}
+2024-11-19T22:49:38.856+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.SubcategoryController#getAllSubcategories()
+2024-11-19T22:49:39.133+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.category_id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0
+2024-11-19T22:49:39.227+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        categories c1_0 
+    left join
+        subcategories s1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        c1_0.id=?
+2024-11-19T22:49:39.321+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        categories c1_0 
+    left join
+        subcategories s1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        c1_0.id=?
+2024-11-19T22:49:39.413+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        categories c1_0 
+    left join
+        subcategories s1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        c1_0.id=?
+2024-11-19T22:49:39.506+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        categories c1_0 
+    left join
+        subcategories s1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        c1_0.id=?
+2024-11-19T22:49:39.599+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        categories c1_0 
+    left join
+        subcategories s1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        c1_0.id=?
+2024-11-19T22:49:39.693+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name,
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        categories c1_0 
+    left join
+        subcategories s1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        c1_0.id=?
+2024-11-19T22:49:40.060+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-19T22:49:40.064+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[SubcategoryDTO(id=1, category_id=1, name=Áo Polo, img=https://e7.pngegg.com/pngimages/30/724/png-cl (truncated)...]
+2024-11-19T22:49:40.065+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T22:49:47.727+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/shop/all", parameters={}
+2024-11-19T22:49:47.728+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ShopController#getAllCategories()
+2024-11-19T22:49:48.005+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.name 
+    from
+        categories c1_0
+2024-11-19T22:49:48.096+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:48.188+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:48.281+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:48.373+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:48.467+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:48.559+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:49:48.927+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-19T22:49:48.927+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.dto.CategoryDTO@3f10dcaf, com.shop.bhpt.dto.CategoryDTO@44d94795, com.shop.bhpt.dto.C (truncated)...]
+2024-11-19T22:49:48.928+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T22:50:00.760+07:00  INFO 5444 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T22:50:00.772+07:00  INFO 5444 --- [bhpt] [Thread-98] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:50:00.773+07:00  INFO 5444 --- [bhpt] [Thread-98] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown initiated...
+2024-11-19T22:50:01.689+07:00  INFO 5444 --- [bhpt] [Thread-98] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown completed.
+2024-11-19T22:50:01.829+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 5444 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-19T22:50:01.830+07:00 DEBUG 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-19T22:50:01.830+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T22:50:02.044+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T22:50:02.056+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2024-11-19T22:50:02.178+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-19T22:50:02.181+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T22:50:02.181+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T22:50:02.198+07:00  INFO 5444 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-19T22:50:02.198+07:00  INFO 5444 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 365 ms
+2024-11-19T22:50:02.255+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T22:50:02.258+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Starting...
+2024-11-19T22:50:03.338+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-26 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7604d94
+2024-11-19T22:50:03.340+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Start completed.
+2024-11-19T22:50:05.196+07:00  INFO 5444 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:50:05.316+07:00  WARN 5444 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T22:50:05.403+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2024-11-19T22:50:05.435+07:00 DEBUG 5444 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-19T22:50:05.448+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T22:50:05.453+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T22:50:05.469+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-19T22:50:05.602+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T22:50:05.619+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-19T22:50:05.623+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.815 seconds (process running for 1111.082)
+2024-11-19T22:50:05.625+07:00  INFO 5444 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T22:50:47.964+07:00  INFO 5444 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-19T22:50:47.964+07:00  INFO 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-19T22:50:47.964+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-19T22:50:47.964+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-19T22:50:47.964+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-19T22:50:47.964+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@66482053
+2024-11-19T22:50:47.965+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1f444029
+2024-11-19T22:50:47.965+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-19T22:50:47.965+07:00  INFO 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-19T22:50:47.965+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/shop/items", parameters={}
+2024-11-19T22:50:47.965+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ShopController#getAllItems()
+2024-11-19T22:50:48.258+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-19T22:50:48.356+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:48.454+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:48.552+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:48.649+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:48.745+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:48.843+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:50:48.939+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:50:49.036+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:50:49.423+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:49.520+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:49.616+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:49.712+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:49.809+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:49.906+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:50.002+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:50.099+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:50.196+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:50.292+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:50.388+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:50.484+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:50.581+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:50.677+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:50.773+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:50.870+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:50.967+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:51.064+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:51.159+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:51.256+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:51.353+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:51.449+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:51.545+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:51.641+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:51.738+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:51.834+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:51.931+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:52.027+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:52.124+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:52.221+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:52.317+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:52.414+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:52.510+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:52.607+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:52.703+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:52.798+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:52.895+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:52.990+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:53.087+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:53.184+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:53.280+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:53.376+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:53.421+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/items", parameters={}
+2024-11-19T22:50:53.421+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ItemController#getAllItems()
+2024-11-19T22:50:53.472+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:53.570+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:53.665+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:53.711+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-19T22:50:53.761+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:53.807+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:53.858+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:53.903+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:53.955+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:54.001+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:54.051+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:54.096+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:54.148+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:54.195+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id=?
+2024-11-19T22:50:54.245+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:54.290+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:50:54.342+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:54.386+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:50:54.438+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:54.483+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id=?
+2024-11-19T22:50:54.534+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:54.632+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:54.727+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:54.824+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:54.867+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-19T22:50:54.867+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.entities.Item@72a42465, com.shop.bhpt.entities.Item@66d3c369, com.shop.bhpt.entities. (truncated)...]
+2024-11-19T22:50:54.874+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:54.921+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-19T22:50:54.922+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.dto.ItemDTO@7b2a26ba, com.shop.bhpt.dto.ItemDTO@66998ff1, com.shop.bhpt.dto.ItemDTO@3 (truncated)...]
+2024-11-19T22:50:54.926+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T22:50:54.970+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:55.066+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:55.162+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:55.259+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:55.354+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:55.450+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:55.547+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:55.643+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:55.738+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:55.835+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:55.929+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:56.025+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:56.121+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:56.217+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:56.314+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:56.409+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:56.505+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:56.601+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:56.698+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:56.794+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:56.889+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:56.984+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:57.081+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:57.177+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:57.274+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:57.369+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:57.465+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:57.561+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:57.658+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:57.754+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:57.850+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:57.946+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:58.042+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:58.137+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:58.234+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:58.330+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:58.426+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:58.522+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:58.617+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:58.715+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:58.811+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:58.907+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:59.002+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:59.099+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:59.195+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:59.291+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:59.387+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:59.482+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:59.581+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:59.676+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:59.772+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:50:59.869+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:50:59.965+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:51:00.062+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:51:00.158+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id=?
+2024-11-19T22:51:00.254+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id=?
+2024-11-19T22:51:00.351+07:00 DEBUG 5444 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-19T22:51:37.302+07:00  INFO 5444 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T22:51:37.313+07:00  INFO 5444 --- [bhpt] [Thread-102] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:51:37.314+07:00  INFO 5444 --- [bhpt] [Thread-102] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown initiated...
+2024-11-19T22:51:38.248+07:00  INFO 5444 --- [bhpt] [Thread-102] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown completed.
+2024-11-19T22:51:38.386+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 5444 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-19T22:51:38.386+07:00 DEBUG 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-19T22:51:38.386+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T22:51:38.638+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T22:51:38.653+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2024-11-19T22:51:38.765+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-19T22:51:38.766+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T22:51:38.766+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T22:51:38.794+07:00  INFO 5444 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-19T22:51:38.794+07:00  INFO 5444 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 405 ms
+2024-11-19T22:51:38.854+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T22:51:38.855+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Starting...
+2024-11-19T22:51:39.832+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-27 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31d3b41a
+2024-11-19T22:51:39.833+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Start completed.
+2024-11-19T22:51:41.626+07:00  INFO 5444 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:51:41.706+07:00  WARN 5444 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T22:51:41.769+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-11-19T22:51:41.791+07:00 DEBUG 5444 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-19T22:51:41.802+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T22:51:41.808+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T22:51:41.817+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-19T22:51:41.897+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T22:51:41.910+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-19T22:51:41.913+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.55 seconds (process running for 1207.372)
+2024-11-19T22:51:41.916+07:00  INFO 5444 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T22:52:19.825+07:00  INFO 5444 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T22:52:19.836+07:00  INFO 5444 --- [bhpt] [Thread-106] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:52:19.837+07:00  INFO 5444 --- [bhpt] [Thread-106] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown initiated...
+2024-11-19T22:52:20.743+07:00  INFO 5444 --- [bhpt] [Thread-106] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown completed.
+2024-11-19T22:52:20.902+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 5444 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-19T22:52:20.903+07:00 DEBUG 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-19T22:52:20.903+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T22:52:21.196+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T22:52:21.208+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2024-11-19T22:52:21.341+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-19T22:52:21.343+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T22:52:21.343+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T22:52:21.376+07:00  INFO 5444 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-19T22:52:21.376+07:00  INFO 5444 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 470 ms
+2024-11-19T22:52:21.435+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T22:52:21.436+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Starting...
+2024-11-19T22:52:22.536+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-28 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ab3e146
+2024-11-19T22:52:22.536+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Start completed.
+2024-11-19T22:52:24.293+07:00  INFO 5444 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:52:24.412+07:00  WARN 5444 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T22:52:24.485+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-11-19T22:52:24.510+07:00 DEBUG 5444 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-19T22:52:24.519+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T22:52:24.525+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T22:52:24.536+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-19T22:52:24.635+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T22:52:24.651+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-19T22:52:24.656+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.783 seconds (process running for 1250.115)
+2024-11-19T22:52:24.659+07:00  INFO 5444 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T22:52:34.179+07:00  INFO 5444 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T22:52:34.187+07:00  INFO 5444 --- [bhpt] [Thread-110] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:52:34.188+07:00  INFO 5444 --- [bhpt] [Thread-110] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown initiated...
+2024-11-19T22:52:35.102+07:00  INFO 5444 --- [bhpt] [Thread-110] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown completed.
+2024-11-19T22:52:35.237+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 5444 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-19T22:52:35.237+07:00 DEBUG 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-19T22:52:35.237+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T22:52:35.490+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T22:52:35.505+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2024-11-19T22:52:35.623+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-19T22:52:35.625+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T22:52:35.625+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T22:52:35.647+07:00  INFO 5444 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-19T22:52:35.647+07:00  INFO 5444 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2024-11-19T22:52:35.709+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T22:52:35.709+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Starting...
+2024-11-19T22:52:36.657+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-29 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ddc3074
+2024-11-19T22:52:36.658+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Start completed.
+2024-11-19T22:52:38.245+07:00  INFO 5444 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:52:38.401+07:00  WARN 5444 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T22:52:38.482+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-11-19T22:52:38.507+07:00 DEBUG 5444 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-19T22:52:38.516+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T22:52:38.520+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T22:52:38.530+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-19T22:52:38.610+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T22:52:38.624+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-19T22:52:38.630+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.421 seconds (process running for 1264.09)
+2024-11-19T22:52:38.633+07:00  INFO 5444 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T22:53:14.495+07:00  INFO 5444 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T22:53:14.507+07:00  INFO 5444 --- [bhpt] [Thread-114] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:53:14.507+07:00  INFO 5444 --- [bhpt] [Thread-114] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown initiated...
+2024-11-19T22:53:15.403+07:00  INFO 5444 --- [bhpt] [Thread-114] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown completed.
+2024-11-19T22:53:15.541+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 5444 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-19T22:53:15.541+07:00 DEBUG 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-19T22:53:15.541+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T22:53:15.845+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T22:53:15.864+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2024-11-19T22:53:15.999+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-19T22:53:16.000+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T22:53:16.000+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T22:53:16.025+07:00  INFO 5444 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-19T22:53:16.027+07:00  INFO 5444 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 484 ms
+2024-11-19T22:53:16.080+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T22:53:16.080+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Starting...
+2024-11-19T22:53:18.115+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-30 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41f1258c
+2024-11-19T22:53:18.115+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Start completed.
+2024-11-19T22:53:19.720+07:00  INFO 5444 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:53:19.825+07:00  WARN 5444 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T22:53:19.906+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-11-19T22:53:19.928+07:00 DEBUG 5444 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-19T22:53:19.939+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T22:53:19.944+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T22:53:19.954+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-19T22:53:20.045+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T22:53:20.059+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-19T22:53:20.065+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 4.552 seconds (process running for 1305.524)
+2024-11-19T22:53:20.067+07:00  INFO 5444 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T22:53:23.908+07:00  INFO 5444 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T22:53:23.916+07:00  INFO 5444 --- [bhpt] [Thread-118] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:53:23.917+07:00  INFO 5444 --- [bhpt] [Thread-118] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown initiated...
+2024-11-19T22:53:24.622+07:00  INFO 5444 --- [bhpt] [Thread-118] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown completed.
+2024-11-19T22:53:24.768+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 5444 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-19T22:53:24.769+07:00 DEBUG 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-19T22:53:24.769+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T22:53:25.099+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T22:53:25.114+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2024-11-19T22:53:25.245+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-19T22:53:25.246+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T22:53:25.246+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T22:53:25.271+07:00  INFO 5444 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-19T22:53:25.271+07:00  INFO 5444 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 499 ms
+2024-11-19T22:53:25.327+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T22:53:25.328+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Starting...
+2024-11-19T22:53:26.271+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-31 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f697b8b
+2024-11-19T22:53:26.272+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Start completed.
+2024-11-19T22:53:27.860+07:00  INFO 5444 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:53:27.940+07:00  WARN 5444 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T22:53:27.998+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-11-19T22:53:28.024+07:00 DEBUG 5444 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-19T22:53:28.039+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T22:53:28.043+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T22:53:28.051+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-19T22:53:28.139+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T22:53:28.151+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-19T22:53:28.155+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.415 seconds (process running for 1313.615)
+2024-11-19T22:53:28.158+07:00  INFO 5444 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-19T22:53:42.111+07:00  INFO 5444 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-19T22:53:42.122+07:00  INFO 5444 --- [bhpt] [Thread-122] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:53:42.122+07:00  INFO 5444 --- [bhpt] [Thread-122] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown initiated...
+2024-11-19T22:53:43.029+07:00  INFO 5444 --- [bhpt] [Thread-122] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown completed.
+2024-11-19T22:53:43.169+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 5444 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-19T22:53:43.169+07:00 DEBUG 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-19T22:53:43.169+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-19T22:53:43.439+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-19T22:53:43.452+07:00  INFO 5444 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2024-11-19T22:53:43.574+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-19T22:53:43.576+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-19T22:53:43.576+07:00  INFO 5444 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-19T22:53:43.603+07:00  INFO 5444 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-19T22:53:43.603+07:00  INFO 5444 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 431 ms
+2024-11-19T22:53:43.668+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-19T22:53:43.669+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Starting...
+2024-11-19T22:53:44.654+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-32 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1397bc70
+2024-11-19T22:53:44.654+07:00  INFO 5444 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Start completed.
+2024-11-19T22:53:46.359+07:00  INFO 5444 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-19T22:53:46.525+07:00  WARN 5444 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-19T22:53:46.614+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-11-19T22:53:46.649+07:00 DEBUG 5444 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-19T22:53:46.666+07:00 DEBUG 5444 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-19T22:53:46.676+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-19T22:53:46.689+07:00 DEBUG 5444 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-19T22:53:46.841+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-19T22:53:46.865+07:00  INFO 5444 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-19T22:53:46.871+07:00  INFO 5444 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 3.73 seconds (process running for 1332.33)
+2024-11-19T22:53:46.874+07:00  INFO 5444 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
