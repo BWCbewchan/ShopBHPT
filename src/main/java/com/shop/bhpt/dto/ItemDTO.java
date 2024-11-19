@@ -12,6 +12,7 @@ public class ItemDTO {
     private Double price;
     private Integer discount;
     private Long subcategoryId;
+    private String subcategoryImg;
     private List<String> colors;
     private List<String> sizes;
     private List<String> characteristics;
@@ -50,6 +51,12 @@ public class ItemDTO {
 	}
 	public void setSubcategoryId(Long subcategoryId) {
 		this.subcategoryId = subcategoryId;
+	}
+	public String getSubcategoryImg() {
+		return subcategoryImg;
+	}
+	public void setSubcategoryImg(String subcategoryImg) {
+		this.subcategoryImg = subcategoryImg;
 	}
 	public List<String> getColors() {
 		return colors;

@@ -27,68 +27,64 @@ import lombok.extern.slf4j.Slf4j;
 @CrossOrigin(origins = "*")
 @Slf4j
 public class ShopController {
-    @Autowired
-    private CategoryRepository categoryRepository;
-    
-    @Autowired
-    private SubcategoryRepository subcategoryRepository;
-    
-    @Autowired
-    private ItemRepository itemRepository;
-    
-    @GetMapping("/all")
-    public List<CategoryDTO> getAllCategories() {
-        List<Category> categories = categoryRepository.findAll();
-        return categories.stream()
-            .map(this::convertToCategoryDTO)
-            .collect(Collectors.toList());
-    }
-    
-    private CategoryDTO convertToCategoryDTO(Category category) {
-        CategoryDTO categoryDTO = new CategoryDTO();
-        categoryDTO.setId(category.getId());
-        categoryDTO.setName(category.getName());
-        
-        List<SubcategoryDTO> subDTOs = new ArrayList<>();
-        for (Subcategory sub : category.getSubcategories()) {
-            SubcategoryDTO subDTO = new SubcategoryDTO();
-            subDTO.setId(sub.getId());
-            subDTO.setName(sub.getName());
-            subDTO.setImg(sub.getImg());
-            subDTOs.add(subDTO);
-        }
-        categoryDTO.setSubcategories(subDTOs);
-        
-        return categoryDTO;
-    }
-    
-    @GetMapping("/subcategories")
-    public List<Subcategory> getAllSubcategories() {
-        List<Subcategory> subcategories = subcategoryRepository.findAll();
-        return subcategories;
-    }
-    
-    @GetMapping("/items")
-    public List<ItemDTO> getAllItems() {
-        List<Item> items = itemRepository.findAll();
-        return items.stream()
-            .map(this::convertToItemDTO)
-            .collect(Collectors.toList());
-    }
-    
-    private ItemDTO convertToItemDTO(Item item) {
-        ItemDTO dto = new ItemDTO();
-        dto.setId(item.getId());
-        dto.setName(item.getName());
-        dto.setSold(item.getSold());
-        dto.setPrice(item.getPrice());
-        dto.setDiscount(item.getDiscount());
-        dto.setSubcategoryId(item.getSubcategory() != null ? item.getSubcategory().getId() : null);
-        
-        dto.setColors(new ArrayList<>(item.getColors()));
-        dto.setSizes(new ArrayList<>(item.getSizes()));
-        dto.setCharacteristics(new ArrayList<>(item.getCharacteristics()));
-        
-        return dto;
-    }
-} 
+	@Autowired
+	private CategoryRepository categoryRepository;
+
+	@Autowired
+	private SubcategoryRepository subcategoryRepository;
+
+	@Autowired
+	private ItemRepository itemRepository;
+
+	@GetMapping("/all")
+	public List<CategoryDTO> getAllCategories() {
+		List<Category> categories = categoryRepository.findAll();
+		return categories.stream().map(this::convertToCategoryDTO).collect(Collectors.toList());
+	}
+
+	private CategoryDTO convertToCategoryDTO(Category category) {
+		CategoryDTO categoryDTO = new CategoryDTO();
+		categoryDTO.setId(category.getId());
+		categoryDTO.setName(category.getName());
+
+		List<SubcategoryDTO> subDTOs = new ArrayList<>();
+		for (Subcategory sub : category.getSubcategories()) {
+			SubcategoryDTO subDTO = new SubcategoryDTO();
+			subDTO.setId(sub.getId());
+			subDTO.setName(sub.getName());
+			subDTO.setImg(sub.getImg());
+			subDTOs.add(subDTO);
+		}
+		categoryDTO.setSubcategories(subDTOs);
+
+		return categoryDTO;
+	}
+
+	@GetMapping("/items")
+	public List<ItemDTO> getAllItems() {
+	    List<Item> items = itemRepository.findAll();
+	    return items.stream()
+	        .map(this::convertToItemDTO)
+	        .collect(Collectors.toList());
+	}
+
+	private ItemDTO convertToItemDTO(Item item) {
+	    ItemDTO dto = new ItemDTO();
+	    dto.setId(item.getId());
+	    dto.setName(item.getName());
+	    dto.setSold(item.getSold());
+	    dto.setPrice(item.getPrice());
+	    dto.setDiscount(item.getDiscount());
+	    
+	    if (item.getSubcategory() != null) {
+	        dto.setSubcategoryId(item.getSubcategory().getId());
+	        dto.setSubcategoryImg(item.getSubcategory().getImg());
+	    }
+	    
+	    dto.setColors(new ArrayList<>(item.getColors()));
+	    dto.setSizes(new ArrayList<>(item.getSizes()));
+	    dto.setCharacteristics(new ArrayList<>(item.getCharacteristics()));
+	    
+	    return dto;
+	}
+}

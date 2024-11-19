@@ -54,7 +54,7 @@ public class Item {
     @CollectionTable(name = "item_characteristics", joinColumns = @JoinColumn(name = "item_id"))
     @Column(name = "characteristic")
     private Set<String> characteristics;
-
+    
 	public Long getId() {
 		return id;
 	}
@@ -131,5 +131,5 @@ public class Item {
 		return subcategory != null ? subcategory.getId() : null;
 	}
     
-    
 }
+
