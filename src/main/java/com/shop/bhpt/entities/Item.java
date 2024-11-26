@@ -130,6 +130,26 @@ public class Item {
 	public Long getSubcategoryId() {
 		return subcategory != null ? subcategory.getId() : null;
 	}
+	
+	public void setSubcategoryId(Long subcategoryId) {
+		if (subcategory == null) {
+			subcategory = new Subcategory();
+		}
+		subcategory.setId(subcategoryId);
+	}
+
+	@Override
+	public String toString() {
+		return "Item [id=" + id + ", name=" + name + ", sold=" + sold + ", price=" + price + ", discount=" + discount
+				+ ", subcategory=" + subcategory + ", colors=" + colors + ", sizes=" + sizes + ", characteristics="
+				+ characteristics + "]";
+	}
+	
+	
+	
+	
+	
+	
     
 }
 

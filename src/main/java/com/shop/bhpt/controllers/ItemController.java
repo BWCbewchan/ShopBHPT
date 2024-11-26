@@ -87,6 +87,7 @@ public class ItemController {
 
     @PostMapping
     public Item createItem(@RequestBody Item item) {
+        System.out.println("Received item: " + item);
         return itemRepository.save(item);
     }
 
