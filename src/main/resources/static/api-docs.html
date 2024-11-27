@@ -413,6 +413,41 @@
       </div>
     </div>
 
+    <!-- Authentication Testing Section -->
+    <div class="endpoint">
+      <h3><span class="method post">POST</span> Test Authentication</h3>
+      
+      <!-- Register Test -->
+      <div class="test-section" style="margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 4px;">
+        <h4>Test Register:</h4>
+        <form id="registerForm" style="display: grid; gap: 10px; max-width: 400px;">
+          <input type="text" id="reg-username" placeholder="Username" required style="padding: 8px;">
+          <input type="password" id="reg-password" placeholder="Password" required style="padding: 8px;">
+          <input type="email" id="reg-email" placeholder="Email" required style="padding: 8px;">
+          <input type="text" id="reg-fullName" placeholder="Full Name" required style="padding: 8px;">
+          <input type="tel" id="reg-phone" placeholder="Phone" required style="padding: 8px;">
+          <input type="text" id="reg-address" placeholder="Address" required style="padding: 8px;">
+          <button type="submit" style="padding: 8px; background: #49cc90; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Register
+          </button>
+        </form>
+        <div id="registerResult" style="margin-top: 10px;"></div>
+      </div>
+
+      <!-- Login Test -->
+      <div class="test-section" style="margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 4px;">
+        <h4>Test Login:</h4>
+        <form id="loginForm" style="display: grid; gap: 10px; max-width: 400px;">
+          <input type="text" id="login-username" placeholder="Username" required style="padding: 8px;">
+          <input type="password" id="login-password" placeholder="Password" required style="padding: 8px;">
+          <button type="submit" style="padding: 8px; background: #49cc90; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Login
+          </button>
+        </form>
+        <div id="loginResult" style="margin-top: 10px;"></div>
+      </div>
+    </div>
+
     <script>
       // Navigation functionality
       document.querySelectorAll('.nav-link').forEach(link => {
@@ -578,6 +613,101 @@
 
       // Load categories when page loads
       document.addEventListener('DOMContentLoaded', loadCategories);
+
+      // Register form handler
+      document.getElementById('registerForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const registerResult = document.getElementById('registerResult');
+        registerResult.innerHTML = 'Processing...';
+
+        const registerData = {
+          username: document.getElementById('reg-username').value,
+          password: document.getElementById('reg-password').value,
+          email: document.getElementById('reg-email').value,
+          fullName: document.getElementById('reg-fullName').value,
+          phone: document.getElementById('reg-phone').value,
+          address: document.getElementById('reg-address').value
+        };
+
+        try {
+          const response = await fetch('http://localhost:9998/api/auth/register', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(registerData)
+          });
+
+          const data = await response.json();
+          
+          if (response.ok) {
+            registerResult.innerHTML = `
+              <div style="color: green; margin-top: 10px;">
+                Registration successful!<br>
+                <pre style="margin-top: 10px;">${JSON.stringify(data, null, 2)}</pre>
+              </div>`;
+          } else {
+            registerResult.innerHTML = `
+              <div style="color: red; margin-top: 10px;">
+                Registration failed:<br>
+                ${data.message || JSON.stringify(data)}
+              </div>`;
+          }
+        } catch (error) {
+          registerResult.innerHTML = `
+            <div style="color: red; margin-top: 10px;">
+              Error: ${error.message}
+            </div>`;
+        }
+      });
+
+      // Login form handler
+      document.getElementById('loginForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const loginResult = document.getElementById('loginResult');
+        loginResult.innerHTML = 'Processing...';
+
+        const loginData = {
+          username: document.getElementById('login-username').value,
+          password: document.getElementById('login-password').value
+        };
+
+        try {
+          const response = await fetch('http://localhost:9998/api/auth/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(loginData)
+          });
+
+          const data = await response.json();
+          
+          if (response.ok) {
+            loginResult.innerHTML = `
+              <div style="color: green; margin-top: 10px;">
+                Login successful!<br>
+                <pre style="margin-top: 10px;">${JSON.stringify(data, null, 2)}</pre>
+              </div>`;
+            
+            // Store token if needed
+            if (data.token) {
+              localStorage.setItem('jwt_token', data.token);
+            }
+          } else {
+            loginResult.innerHTML = `
+              <div style="color: red; margin-top: 10px;">
+                Login failed:<br>
+                ${data.message || JSON.stringify(data)}
+              </div>`;
+          }
+        } catch (error) {
+          loginResult.innerHTML = `
+            <div style="color: red; margin-top: 10px;">
+              Error: ${error.message}
+            </div>`;
+        }
+      });
     </script>
   </body>
 </html>
