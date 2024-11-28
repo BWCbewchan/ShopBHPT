@@ -33,14 +33,45 @@ public class ItemController {
     
     @Autowired
     private ItemRepository itemRepository;
+    
     @GetMapping("/paginated")
     public Page<Item> getAllItemsWithPagination(
         @RequestParam(defaultValue = "0") int page,
-        @RequestParam(defaultValue = "10") int size
+        @RequestParam(defaultValue = "10") int size,
+        @RequestParam(required = false) String filterType,
+        @RequestParam(required = false) String searchQuery,
+        @RequestParam(required = false) Long subcategoryId
     ) {
         Pageable pageable = PageRequest.of(page, size);
-        return itemRepository.findAll(pageable);
+        Page<Item> items;
+
+        // Handle the null case for filterType
+        if (filterType == null) {
+            filterType = ""; // Default to an empty string or a safe value
+        }
+
+        switch (filterType) {
+            case "topSelling":
+                items = itemRepository.findTop10SellingItems(pageable);
+                break;
+            case "topSlow":
+                items = itemRepository.findTop10SlowSellingItems(pageable);
+                break;
+            case "lowStock":
+                items = itemRepository.findLowStockItems(pageable);
+                break;
+            case "outOfStock":
+                items = itemRepository.findOutOfStockItems(pageable);
+                break;
+            default:
+                items = itemRepository.findAll(pageable);
+                break;
+        }
+
+        return items;
     }
+
+
 
     // Tìm theo subcategoryId với phân trang
     @GetMapping("/subcategory/{subcategoryId}/paginated")
@@ -147,7 +178,8 @@ public class ItemController {
         if (itemDetails.getCharacteristics() != null) {
             item.setCharacteristics(itemDetails.getCharacteristics());
         }
-        
+        item.setSubcategory(itemDetails.getSubcategory());
+        item.setStockQuantity(itemDetails.getStockQuantity());
         return itemRepository.save(item);
     }
 

@@ -16,6 +16,8 @@ public class ItemDTO {
     private List<String> colors;
     private List<String> sizes;
     private List<String> characteristics;
+    private int stockQuantity;
+    private int soldQuantity;
 	public Long getId() {
 		return id;
 	}
@@ -76,5 +78,18 @@ public class ItemDTO {
 	public void setCharacteristics(List<String> characteristics) {
 		this.characteristics = characteristics;
 	}
+	public int getStockQuantity() {
+		return stockQuantity;
+	}
+	public void setStockQuantity(int stockQuantity) {
+		this.stockQuantity = stockQuantity;
+	}
+	public int getSoldQuantity() {
+		return soldQuantity;
+	}
+	public void setSoldQuantity(int soldQuantity) {
+		this.soldQuantity = soldQuantity;
+	}
+	
     
 } 

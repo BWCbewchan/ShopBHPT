@@ -87,3 +87,19 @@
 2024-11-29T00:13:49.814+07:00  INFO 8876 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
 2024-11-29T00:13:50.771+07:00  INFO 8876 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3417a900
 2024-11-29T00:13:50.772+07:00  INFO 8876 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-11-29T00:13:54.138+07:00  INFO 8876 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-29T00:13:54.287+07:00  WARN 8876 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-29T00:13:54.322+07:00  INFO 8876 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-29T00:13:54.384+07:00 DEBUG 8876 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 41 mappings in 'requestMappingHandlerMapping'
+2024-11-29T00:13:54.418+07:00 DEBUG 8876 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-29T00:13:54.478+07:00 DEBUG 8876 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-29T00:13:54.484+07:00 DEBUG 8876 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-29T00:13:54.495+07:00 DEBUG 8876 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-29T00:13:54.581+07:00  INFO 8876 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-29T00:13:54.602+07:00  INFO 8876 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-29T00:13:54.607+07:00  INFO 8876 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.263 seconds (process running for 1937.295)
+2024-11-29T00:13:54.609+07:00  INFO 8876 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-29T00:36:50.668+07:00  INFO 8876 --- [bhpt] [RMI TCP Connection(74)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-29T00:36:50.691+07:00  INFO 8876 --- [bhpt] [RMI TCP Connection(74)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-29T00:36:50.692+07:00  INFO 8876 --- [bhpt] [RMI TCP Connection(74)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-11-29T00:36:51.601+07:00  INFO 8876 --- [bhpt] [RMI TCP Connection(74)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
