@@ -17682,3 +17682,755 @@ org.hibernate.InstantiationException: No default constructor for entity 'com.sho
 2024-11-28T23:41:24.719+07:00  INFO 34184 --- [bhpt] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-11-28T23:41:24.719+07:00  INFO 34184 --- [bhpt] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
 2024-11-28T23:41:25.412+07:00  INFO 34184 --- [bhpt] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-28T23:41:38.543+07:00  INFO 8876 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 8876 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T23:41:38.546+07:00 DEBUG 8876 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T23:41:38.547+07:00  INFO 8876 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T23:41:38.612+07:00  INFO 8876 --- [bhpt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-28T23:41:38.613+07:00  INFO 8876 --- [bhpt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-28T23:41:39.474+07:00  INFO 8876 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T23:41:39.543+07:00  INFO 8876 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+2024-11-28T23:41:40.109+07:00  INFO 8876 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T23:41:40.124+07:00  INFO 8876 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T23:41:40.124+07:00  INFO 8876 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T23:41:40.194+07:00  INFO 8876 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T23:41:40.195+07:00  INFO 8876 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1581 ms
+2024-11-28T23:41:40.240+07:00 DEBUG 8876 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T23:41:40.685+07:00  INFO 8876 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T23:41:40.716+07:00  INFO 8876 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-28T23:41:41.958+07:00  INFO 8876 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ff46d05
+2024-11-28T23:41:41.960+07:00  INFO 8876 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-28T23:41:46.247+07:00  INFO 8876 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T23:41:46.555+07:00  INFO 8876 --- [bhpt] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-28T23:41:47.326+07:00  WARN 8876 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T23:41:47.418+07:00  INFO 8876 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T23:41:47.644+07:00 DEBUG 8876 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 41 mappings in 'requestMappingHandlerMapping'
+2024-11-28T23:41:47.738+07:00 DEBUG 8876 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T23:41:47.922+07:00 DEBUG 8876 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T23:41:47.960+07:00 DEBUG 8876 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T23:41:47.987+07:00 DEBUG 8876 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T23:41:48.214+07:00  INFO 8876 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T23:41:48.256+07:00  INFO 8876 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T23:41:48.268+07:00  INFO 8876 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 10.103 seconds (process running for 10.956)
+2024-11-28T23:41:54.063+07:00  INFO 8876 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-28T23:41:54.063+07:00  INFO 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-28T23:41:54.063+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-28T23:41:54.063+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-28T23:41:54.063+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-28T23:41:54.064+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@602bc13e
+2024-11-28T23:41:54.066+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@147032de
+2024-11-28T23:41:54.066+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-28T23:41:54.066+07:00  INFO 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-28T23:41:54.093+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/shop/items", parameters={}
+2024-11-28T23:41:54.095+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ShopController#getAllItems()
+2024-11-28T23:41:54.447+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.sold_quantity,
+        i1_0.stock_quantity,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-28T23:41:54.582+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:54.678+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:54.767+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:54.864+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:55.220+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:55.308+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:55.396+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:55.488+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:55.577+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:55.664+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:55.754+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:55.842+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:55.929+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.018+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.106+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.194+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.283+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.371+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.459+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.548+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.636+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.723+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.813+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.901+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:56.988+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.077+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.165+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.253+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.343+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.431+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.519+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.608+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.695+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.783+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.871+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:57.959+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:58.051+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:58.140+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:58.228+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:58.314+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:41:58.419+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-28T23:41:58.420+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.shop.bhpt.dto.ItemDTO@4202b0e1, com.shop.bhpt.dto.ItemDTO@7325f633, com.shop.bhpt.dto.ItemDTO@4 (truncated)...]
+2024-11-28T23:41:58.472+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T23:42:07.946+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/items", parameters={}
+2024-11-28T23:42:07.946+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.shop.bhpt.controllers.ItemController#getAllItems()
+2024-11-28T23:42:08.209+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        i1_0.id,
+        i1_0.discount,
+        i1_0.name,
+        i1_0.price,
+        i1_0.sold,
+        i1_0.sold_quantity,
+        i1_0.stock_quantity,
+        i1_0.subcategory_id 
+    from
+        items i1_0
+2024-11-28T23:42:08.309+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:08.398+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:08.487+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        c1_0.id,
+        c1_0.name,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    left join
+        categories c1_0 
+            on c1_0.id=s1_0.category_id 
+    where
+        s1_0.id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:08.575+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.category_id,
+        s1_0.id,
+        s1_0.img,
+        s1_0.name 
+    from
+        subcategories s1_0 
+    where
+        s1_0.category_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:08.923+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-11-28T23:42:08.924+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.011+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.098+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.193+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.281+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.368+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.456+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.543+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.631+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.719+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.807+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.894+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:09.984+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.072+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.159+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.249+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.336+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.422+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.511+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.599+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.686+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.775+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.863+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:10.949+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.039+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.126+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.214+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.303+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.390+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.477+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.566+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.653+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.740+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.830+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.color 
+    from
+        item_colors c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:11.917+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        s1_0.item_id,
+        s1_0.size 
+    from
+        item_sizes s1_0 
+    where
+        s1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:12.005+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.item_id,
+        c1_0.characteristic 
+    from
+        item_characteristics c1_0 
+    where
+        c1_0.item_id in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-11-28T23:42:12.093+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Item [id=1, name=Áo Polo Nam Pique Mắt Chim Basic Co Giãn Thoáng Khí, sold=621000, price=299000.0,  (truncated)...]
+2024-11-28T23:42:12.111+07:00 DEBUG 8876 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
