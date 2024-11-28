@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Auth - BHPT Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .auth-box {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .response-box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            min-height: 100px;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .success {
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Box -->
+        <div class="auth-box">
+            <h2>Test Đăng nhập</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit">Đăng nhập</button>
+            </form>
+            <div id="loginResponse" class="response-box">
+                <strong>Response:</strong>
+                <pre></pre>
+            </div>
+        </div>
+
+        <!-- Register Box -->
+        <div class="auth-box">
+            <h2>Test Đăng ký</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="regUsername">Username:</label>
+                    <input type="text" id="regUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email:</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regFullName">Họ và tên:</label>
+                    <input type="text" id="regFullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPhone">Số điện thoại:</label>
+                    <input type="tel" id="regPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="regAddress">Địa chỉ:</label>
+                    <textarea id="regAddress" required></textarea>
+                </div>
+                <button type="submit">Đăng ký</button>
+            </form>
+            <div id="registerResponse" class="response-box">
+                <strong>Response:</strong>
+                <pre></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:9998';  // Thay đổi port nếu cần
+
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const responseBox = document.querySelector('#loginResponse pre');
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        username: document.getElementById('loginUsername').value,
+                        password: document.getElementById('loginPassword').value
+                    })
+                });
+
+                const data = await response.json();
+                responseBox.innerHTML = JSON.stringify(data, null, 2);
+                responseBox.className = response.ok ? 'success' : 'error';
+
+                if (response.ok) {
+                    localStorage.setItem('token', data.token);
+                }
+            } catch (error) {
+                responseBox.innerHTML = 'Error: ' + error.message;
+                responseBox.className = 'error';
+            }
+        });
+
+        document.getElementById('registerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const responseBox = document.querySelector('#registerResponse pre');
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/auth/register`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        username: document.getElementById('regUsername').value,
+                        password: document.getElementById('regPassword').value,
+                        email: document.getElementById('regEmail').value,
+                        fullName: document.getElementById('regFullName').value,
+                        phone: document.getElementById('regPhone').value,
+                        address: document.getElementById('regAddress').value
+                    })
+                });
+
+                const data = await response.json();
+                responseBox.innerHTML = JSON.stringify(data, null, 2);
+                responseBox.className = response.ok ? 'success' : 'error';
+            } catch (error) {
+                responseBox.innerHTML = 'Error: ' + error.message;
+                responseBox.className = 'error';
+            }
+        });
+    </script>
+</body>
+</html>

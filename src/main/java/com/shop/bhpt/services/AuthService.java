@@ -11,6 +11,7 @@ import com.shop.bhpt.entities.Role;
 import com.shop.bhpt.entities.User;
 import com.shop.bhpt.exceptions.CustomException;
 import com.shop.bhpt.repositories.UserRepository;
+import com.shop.bhpt.security.JwtTokenProvider;
 
 @Service
 public class AuthService {
@@ -19,6 +20,9 @@ public class AuthService {
     
     @Autowired
     private PasswordEncoder passwordEncoder;
+    
+    @Autowired
+    private JwtTokenProvider jwtTokenProvider; // Lớp tạo token
 
     public AuthenticationResponse register(RegisterRequest request) {
         // Kiểm tra username đã tồn tại
@@ -37,7 +41,7 @@ public class AuthService {
         user.setRole(Role.USER);
 
         userRepository.save(user);
-
+        
         return new AuthenticationResponse("Đăng ký thành công!");
     }
 
@@ -48,7 +52,9 @@ public class AuthService {
         if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
             throw new CustomException("Sai mật khẩu!");
         }
-
-        return new AuthenticationResponse("Đăng nhập thành công!");
+        
+        String token = jwtTokenProvider.generateToken(user);
+        
+        return new AuthenticationResponse("Đăng nhập thành công!", token);
     }
 } 
