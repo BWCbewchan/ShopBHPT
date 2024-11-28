@@ -8672,3 +8672,1070 @@ java.lang.IllegalStateException: Ambiguous search mapping detected; Both public 
 2024-11-28T22:05:26.240+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
 2024-11-28T22:05:27.323+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37b4c2f7
 2024-11-28T22:05:27.323+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-11-28T22:05:30.803+07:00  INFO 12916 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:05:31.156+07:00  WARN 12916 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:05:31.219+07:00  INFO 12916 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:05:31.305+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:05:31.355+07:00 DEBUG 12916 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:05:31.464+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:05:31.474+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:05:31.499+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:05:31.628+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:05:31.659+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:05:31.670+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 6.546 seconds (process running for 403.515)
+2024-11-28T22:05:31.674+07:00  INFO 12916 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:05:37.287+07:00  INFO 12916 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-28T22:05:37.288+07:00  INFO 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-28T22:05:37.288+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-28T22:05:37.288+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-28T22:05:37.288+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-28T22:05:37.290+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5bcf0c25
+2024-11-28T22:05:37.291+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@af07395
+2024-11-28T22:05:37.291+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-28T22:05:37.291+07:00  INFO 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-28T22:05:37.294+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html?gidzl=tQ4NVIQwXmxOknD_8wQE2Tw-6tmueuu9bEvEVMMdYGsLlKzxEQBO3yIz7ti_fzbPpknE9ZB8BwL69xcB0m", parameters={masked}
+2024-11-28T22:05:37.295+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:05:37.299+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:05:37.367+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-11-28T22:05:37.369+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:05:37.374+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-11-28T22:05:37.376+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-11-28T22:05:37.376+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-11-28T22:05:37.377+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-11-28T22:05:37.377+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:05:37.377+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:05:37.378+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:05:37.378+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:05:37.381+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:05:37.381+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:05:37.382+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:05:37.386+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:05:37.408+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:05:37.675+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-11-28T22:05:37.677+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-11-28T22:05:37.681+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-11-28T22:05:37.681+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:9998/swagger-ui/oauth2-re (truncated)...]
+2024-11-28T22:05:37.683+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:05:37.734+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-11-28T22:05:37.736+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:05:37.739+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:05:37.743+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-11-28T22:05:37.743+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-11-28T22:05:39.361+07:00  INFO 12916 --- [bhpt] [http-nio-9998-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1613 ms
+2024-11-28T22:05:39.405+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-11-28T22:05:39.415+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-11-28T22:05:39.417+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:07:16.334+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html?gidzl=tQ4NVIQwXmxOknD_8wQE2Tw-6tmueuu9bEvEVMMdYGsLlKzxEQBO3yIz7ti_fzbPpknE9ZB8BwL69xcB0m", parameters={masked}
+2024-11-28T22:07:16.334+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:07:16.336+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:07:16.405+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-11-28T22:07:16.407+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:07:16.411+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:07:16.418+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-11-28T22:07:16.418+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-11-28T22:07:16.418+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-11-28T22:07:16.419+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:07:16.419+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:07:16.420+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-11-28T22:07:16.420+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:07:16.420+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:07:16.422+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:07:16.426+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:07:16.426+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:07:16.446+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:07:16.762+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-11-28T22:07:16.764+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-11-28T22:07:16.766+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-11-28T22:07:16.767+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:9998/swagger-ui/oauth2-re (truncated)...]
+2024-11-28T22:07:16.768+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:07:16.813+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-11-28T22:07:16.814+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:07:16.818+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:07:16.897+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-11-28T22:07:16.897+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-11-28T22:07:16.915+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-11-28T22:07:16.922+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-11-28T22:07:16.923+07:00 DEBUG 12916 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:08:54.872+07:00  INFO 12916 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:08:54.888+07:00  INFO 12916 --- [bhpt] [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:08:54.889+07:00  INFO 12916 --- [bhpt] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-11-28T22:08:55.779+07:00  INFO 12916 --- [bhpt] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-11-28T22:08:55.897+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 12916 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:08:55.898+07:00 DEBUG 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:08:55.898+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:08:56.200+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:08:56.216+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:08:56.366+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:08:56.368+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:08:56.368+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:08:56.388+07:00  INFO 12916 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:08:56.388+07:00  INFO 12916 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 486 ms
+2024-11-28T22:08:56.399+07:00 DEBUG 12916 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:08:56.480+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:08:56.481+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-11-28T22:08:57.551+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41b4cd34
+2024-11-28T22:08:57.552+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-11-28T22:09:01.257+07:00  INFO 12916 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:09:01.449+07:00  WARN 12916 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:09:01.509+07:00  INFO 12916 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:09:01.595+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:09:01.633+07:00 DEBUG 12916 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:09:01.705+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:09:01.713+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:09:01.728+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:09:01.838+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:09:01.855+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:09:01.861+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 6.001 seconds (process running for 613.705)
+2024-11-28T22:09:01.863+07:00  INFO 12916 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:10:02.885+07:00  INFO 12916 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:10:02.895+07:00  INFO 12916 --- [bhpt] [Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:10:02.896+07:00  INFO 12916 --- [bhpt] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-11-28T22:10:03.795+07:00  INFO 12916 --- [bhpt] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-11-28T22:10:03.907+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 12916 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:10:03.907+07:00 DEBUG 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:10:03.907+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:10:04.192+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:10:04.217+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:10:04.393+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:10:04.394+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:10:04.394+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:10:04.423+07:00  INFO 12916 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:10:04.423+07:00  INFO 12916 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 514 ms
+2024-11-28T22:10:04.443+07:00 DEBUG 12916 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:10:04.518+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:10:04.519+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-11-28T22:10:05.636+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56927da7
+2024-11-28T22:10:05.637+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-11-28T22:10:09.218+07:00  INFO 12916 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:10:09.354+07:00  WARN 12916 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:10:09.388+07:00  INFO 12916 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:10:09.446+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:10:09.483+07:00 DEBUG 12916 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:10:09.539+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:10:09.544+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:10:09.555+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:10:09.624+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:10:09.641+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:10:09.645+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.762 seconds (process running for 681.49)
+2024-11-28T22:10:09.647+07:00  INFO 12916 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:10:17.679+07:00  INFO 12916 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:10:17.688+07:00  INFO 12916 --- [bhpt] [Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:10:17.689+07:00  INFO 12916 --- [bhpt] [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-11-28T22:10:18.621+07:00  INFO 12916 --- [bhpt] [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2024-11-28T22:10:18.776+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 12916 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:10:18.776+07:00 DEBUG 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:10:18.776+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:10:19.070+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:10:19.092+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:10:19.190+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:10:19.190+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:10:19.191+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:10:19.209+07:00  INFO 12916 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:10:19.210+07:00  INFO 12916 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 430 ms
+2024-11-28T22:10:19.220+07:00 DEBUG 12916 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:10:19.254+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:10:19.254+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-11-28T22:10:20.333+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44db0f60
+2024-11-28T22:10:20.333+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-11-28T22:10:23.864+07:00  INFO 12916 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:10:24.032+07:00  WARN 12916 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:10:24.080+07:00  INFO 12916 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:10:24.149+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:10:24.188+07:00 DEBUG 12916 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:10:24.247+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:10:24.253+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:10:24.267+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:10:24.348+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:10:24.362+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:10:24.366+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.626 seconds (process running for 696.21)
+2024-11-28T22:10:24.368+07:00  INFO 12916 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:11:52.127+07:00  INFO 12916 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 11 class path changes (0 additions, 0 deletions, 11 modifications)
+2024-11-28T22:11:52.147+07:00  INFO 12916 --- [bhpt] [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:11:52.148+07:00  INFO 12916 --- [bhpt] [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2024-11-28T22:11:53.073+07:00  INFO 12916 --- [bhpt] [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2024-11-28T22:11:53.294+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 12916 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:11:53.295+07:00 DEBUG 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:11:53.295+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:11:53.762+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:11:53.787+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:11:54.000+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:11:54.001+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:11:54.003+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:11:54.030+07:00  INFO 12916 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:11:54.030+07:00  INFO 12916 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
+2024-11-28T22:11:54.049+07:00 DEBUG 12916 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:11:54.104+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:11:54.105+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2024-11-28T22:11:55.059+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2240ac03
+2024-11-28T22:11:55.061+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2024-11-28T22:11:55.514+07:00 DEBUG 12916 --- [bhpt] [restartedMain] org.hibernate.SQL                        : 
+    alter table items 
+       add column sold_quantity integer not null
+2024-11-28T22:11:55.891+07:00 DEBUG 12916 --- [bhpt] [restartedMain] org.hibernate.SQL                        : 
+    alter table items 
+       add column stock_quantity integer not null
+2024-11-28T22:11:58.800+07:00  INFO 12916 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:11:59.075+07:00  WARN 12916 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:11:59.144+07:00  INFO 12916 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:11:59.273+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:11:59.319+07:00 DEBUG 12916 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:11:59.400+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:11:59.409+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:11:59.426+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:11:59.564+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:11:59.600+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:11:59.610+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 6.383 seconds (process running for 791.454)
+2024-11-28T22:11:59.614+07:00  INFO 12916 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:12:03.414+07:00  INFO 12916 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-11-28T22:12:03.426+07:00  INFO 12916 --- [bhpt] [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:12:03.427+07:00  INFO 12916 --- [bhpt] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2024-11-28T22:12:04.326+07:00  INFO 12916 --- [bhpt] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2024-11-28T22:12:04.592+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 12916 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:12:04.593+07:00 DEBUG 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:12:04.593+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:12:05.370+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:12:05.429+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:12:05.777+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:12:05.779+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:12:05.779+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:12:05.811+07:00  INFO 12916 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:12:05.811+07:00  INFO 12916 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1215 ms
+2024-11-28T22:12:05.833+07:00 DEBUG 12916 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:12:05.898+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:12:05.899+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2024-11-28T22:12:06.978+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@742047be
+2024-11-28T22:12:06.978+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2024-11-28T22:12:10.476+07:00  INFO 12916 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:12:10.710+07:00  WARN 12916 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:12:10.774+07:00  INFO 12916 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:12:10.868+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:12:10.917+07:00 DEBUG 12916 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:12:10.992+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:12:11.004+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:12:11.026+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:12:11.192+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:12:11.215+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:12:11.222+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 6.722 seconds (process running for 803.066)
+2024-11-28T22:12:11.226+07:00  INFO 12916 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:13:48.862+07:00  INFO 12916 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:13:48.872+07:00  INFO 12916 --- [bhpt] [Thread-62] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:13:48.873+07:00  INFO 12916 --- [bhpt] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2024-11-28T22:13:49.787+07:00  INFO 12916 --- [bhpt] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2024-11-28T22:13:49.935+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 12916 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:13:49.935+07:00 DEBUG 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:13:49.935+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:13:50.640+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:13:50.715+07:00  INFO 12916 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:13:50.986+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:13:50.986+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:13:50.986+07:00  INFO 12916 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:13:51.012+07:00  INFO 12916 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:13:51.012+07:00  INFO 12916 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1073 ms
+2024-11-28T22:13:51.029+07:00 DEBUG 12916 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:13:51.085+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:13:51.086+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2024-11-28T22:13:52.135+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b65eefc
+2024-11-28T22:13:52.135+07:00  INFO 12916 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2024-11-28T22:13:55.627+07:00  INFO 12916 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:13:55.762+07:00  WARN 12916 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:13:55.795+07:00  INFO 12916 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:13:55.850+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:13:55.881+07:00 DEBUG 12916 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:13:55.931+07:00 DEBUG 12916 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:13:55.935+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:13:55.948+07:00 DEBUG 12916 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:13:56.039+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:13:56.055+07:00  INFO 12916 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:13:56.058+07:00  INFO 12916 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 6.163 seconds (process running for 907.903)
+2024-11-28T22:13:56.061+07:00  INFO 12916 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:14:08.913+07:00  INFO 12916 --- [bhpt] [RMI TCP Connection(49)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-28T22:14:08.921+07:00  INFO 12916 --- [bhpt] [RMI TCP Connection(49)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:14:08.922+07:00  INFO 12916 --- [bhpt] [RMI TCP Connection(49)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2024-11-28T22:14:09.837+07:00  INFO 12916 --- [bhpt] [RMI TCP Connection(49)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2024-11-28T22:18:38.049+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:18:38.051+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:18:38.052+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:18:38.106+07:00  INFO 31276 --- [bhpt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-28T22:18:38.106+07:00  INFO 31276 --- [bhpt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-28T22:18:39.031+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:18:39.099+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:18:39.703+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:18:39.719+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:18:39.720+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:18:39.780+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:18:39.780+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1674 ms
+2024-11-28T22:18:39.828+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:18:40.318+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:18:40.351+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-28T22:18:41.712+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@737783b6
+2024-11-28T22:18:41.714+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-28T22:18:46.047+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:18:46.413+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-28T22:18:47.262+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:18:47.368+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:18:47.621+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:18:47.731+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:18:47.922+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:18:47.959+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:18:47.994+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:18:48.246+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:18:48.329+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:18:48.345+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 10.66 seconds (process running for 11.499)
+2024-11-28T22:18:48.526+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-28T22:18:48.526+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-28T22:18:48.527+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-28T22:18:48.527+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-28T22:18:48.527+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-28T22:18:48.529+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4eb7219a
+2024-11-28T22:18:48.530+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3089895
+2024-11-28T22:18:48.530+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-28T22:18:48.530+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-28T22:18:48.577+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html?gidzl=tQ4NVIQwXmxOknD_8wQE2Tw-6tmueuu9bEvEVMMdYGsLlKzxEQBO3yIz7ti_fzbPpknE9ZB8BwL69xcB0m", parameters={masked}
+2024-11-28T22:18:48.582+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:18:48.610+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:18:48.663+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-11-28T22:18:48.666+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-11-28T22:18:48.666+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:18:48.667+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-11-28T22:18:48.668+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-11-28T22:18:48.668+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-11-28T22:18:48.668+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:18:48.669+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:18:48.669+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:18:48.670+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:18:48.673+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:18:48.673+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:18:48.678+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:18:48.698+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:18:48.715+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:18:48.999+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-11-28T22:18:49.001+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-11-28T22:18:49.030+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-11-28T22:18:49.032+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:9998/swagger-ui/oauth2-re (truncated)...]
+2024-11-28T22:18:49.044+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:18:49.126+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-11-28T22:18:49.127+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:18:49.130+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:18:49.281+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-11-28T22:18:49.281+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-11-28T22:18:49.344+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-11-28T22:18:49.346+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:18:49.351+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:18:51.117+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1812 ms
+2024-11-28T22:18:51.144+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-11-28T22:18:51.153+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-11-28T22:18:51.155+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:19:41.314+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:19:41.334+07:00  INFO 31276 --- [bhpt] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:19:41.339+07:00  INFO 31276 --- [bhpt] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-28T22:19:42.244+07:00  INFO 31276 --- [bhpt] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-28T22:19:42.355+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:19:42.356+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:19:42.356+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:19:42.671+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:19:42.691+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:19:42.805+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:19:42.806+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:19:42.807+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:19:42.834+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:19:42.834+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 476 ms
+2024-11-28T22:19:42.847+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:19:42.894+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:19:42.895+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-28T22:19:43.952+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f3dd244
+2024-11-28T22:19:43.952+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-28T22:19:47.174+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:19:47.320+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:19:47.364+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:19:47.456+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:19:47.509+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:19:47.568+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:19:47.574+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:19:47.588+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:19:47.678+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:19:47.692+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:19:47.697+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.378 seconds (process running for 70.851)
+2024-11-28T22:19:47.700+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:20:49.148+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:20:49.167+07:00  INFO 31276 --- [bhpt] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:20:49.169+07:00  INFO 31276 --- [bhpt] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-28T22:20:50.066+07:00  INFO 31276 --- [bhpt] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-28T22:20:50.175+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:20:50.176+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:20:50.176+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:20:50.503+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:20:50.527+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:20:50.722+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:20:50.724+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:20:50.724+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:20:50.810+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:20:50.810+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 632 ms
+2024-11-28T22:20:50.836+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:20:50.917+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:20:50.918+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-11-28T22:20:52.100+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30bd6043
+2024-11-28T22:20:52.101+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-11-28T22:20:55.481+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:20:55.648+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:20:55.682+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:20:55.734+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:20:55.772+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:20:55.831+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:20:55.838+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:20:55.856+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:20:55.942+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:20:55.963+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:20:55.969+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.822 seconds (process running for 139.123)
+2024-11-28T22:20:55.972+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:21:06.842+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:21:06.852+07:00  INFO 31276 --- [bhpt] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:21:06.854+07:00  INFO 31276 --- [bhpt] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-11-28T22:21:07.764+07:00  INFO 31276 --- [bhpt] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-11-28T22:21:07.868+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:21:07.868+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:21:07.868+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:21:08.094+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:21:08.110+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:21:08.217+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:21:08.218+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:21:08.218+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:21:08.247+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:21:08.247+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
+2024-11-28T22:21:08.265+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:21:08.325+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:21:08.327+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-11-28T22:21:09.281+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@578842c6
+2024-11-28T22:21:09.282+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-11-28T22:21:12.335+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:21:12.467+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:21:12.498+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:21:12.550+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:21:12.577+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:21:12.628+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:21:12.633+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:21:12.645+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:21:12.711+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:21:12.724+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:21:12.728+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 4.883 seconds (process running for 155.882)
+2024-11-28T22:21:12.730+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:21:21.533+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:21:21.541+07:00  INFO 31276 --- [bhpt] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:21:21.542+07:00  INFO 31276 --- [bhpt] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-11-28T22:21:22.441+07:00  INFO 31276 --- [bhpt] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-11-28T22:21:22.571+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:21:22.572+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:21:22.572+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:21:22.839+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:21:22.855+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:21:22.943+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:21:22.943+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:21:22.943+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:21:22.963+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:21:22.963+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 390 ms
+2024-11-28T22:21:22.973+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:21:23.010+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:21:23.012+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-11-28T22:21:24.003+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@590215ac
+2024-11-28T22:21:24.003+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-11-28T22:21:27.067+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:21:27.194+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:21:27.229+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:21:27.286+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:21:27.313+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:21:27.358+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:21:27.364+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:21:27.377+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:21:27.448+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:21:27.463+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:21:27.469+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 4.928 seconds (process running for 170.623)
+2024-11-28T22:21:27.471+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:21:57.144+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:21:57.153+07:00  INFO 31276 --- [bhpt] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:21:57.154+07:00  INFO 31276 --- [bhpt] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-11-28T22:21:58.061+07:00  INFO 31276 --- [bhpt] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-11-28T22:21:58.208+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:21:58.208+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:21:58.208+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:21:58.570+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:21:58.588+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:21:58.729+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:21:58.730+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:21:58.730+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:21:58.753+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:21:58.753+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 543 ms
+2024-11-28T22:21:58.768+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:21:58.821+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:21:58.821+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-11-28T22:21:59.910+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c78ae93
+2024-11-28T22:21:59.910+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-11-28T22:22:03.118+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:22:03.279+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:22:03.316+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:22:03.374+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:22:03.405+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:22:03.454+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:22:03.461+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:22:03.474+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:22:03.559+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:22:03.576+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:22:03.581+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.406 seconds (process running for 206.735)
+2024-11-28T22:22:03.583+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:24:18.766+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:24:18.776+07:00  INFO 31276 --- [bhpt] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:24:18.777+07:00  INFO 31276 --- [bhpt] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-11-28T22:24:19.661+07:00  INFO 31276 --- [bhpt] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-11-28T22:24:19.833+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:24:19.833+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:24:19.833+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:24:20.132+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:24:20.151+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:24:20.280+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:24:20.280+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:24:20.280+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:24:20.301+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:24:20.303+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 464 ms
+2024-11-28T22:24:20.315+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:24:20.367+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:24:20.367+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-11-28T22:24:21.502+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34ad6085
+2024-11-28T22:24:21.502+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-11-28T22:24:25.155+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:24:25.292+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:24:25.332+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:24:25.387+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:24:25.425+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:24:25.477+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:24:25.482+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:24:25.495+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:24:25.574+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:24:25.589+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:24:25.594+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.796 seconds (process running for 348.747)
+2024-11-28T22:24:25.595+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:24:57.430+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:24:57.445+07:00  INFO 31276 --- [bhpt] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:24:57.446+07:00  INFO 31276 --- [bhpt] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-11-28T22:24:58.365+07:00  INFO 31276 --- [bhpt] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-11-28T22:24:58.515+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:24:58.516+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:24:58.516+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:24:58.862+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:24:58.879+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:24:59.013+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:24:59.013+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:24:59.013+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:24:59.043+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:24:59.043+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 525 ms
+2024-11-28T22:24:59.064+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:24:59.119+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:24:59.120+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-11-28T22:25:00.168+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f0b0966
+2024-11-28T22:25:00.168+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-11-28T22:25:03.556+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:03.723+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:25:03.759+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:25:03.819+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:25:03.848+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:25:03.898+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:25:03.904+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:25:03.916+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:25:03.988+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:25:04.003+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:25:04.007+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.52 seconds (process running for 387.16)
+2024-11-28T22:25:04.008+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:25:06.578+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:25:06.590+07:00  INFO 31276 --- [bhpt] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:06.590+07:00  INFO 31276 --- [bhpt] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-11-28T22:25:07.395+07:00  INFO 31276 --- [bhpt] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-11-28T22:25:07.591+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:25:07.591+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:25:07.591+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:25:08.039+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:25:08.075+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:25:08.279+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:25:08.280+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:25:08.280+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:25:08.320+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:25:08.320+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 724 ms
+2024-11-28T22:25:08.343+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:25:08.400+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:25:08.401+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-11-28T22:25:09.343+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f4a3871
+2024-11-28T22:25:09.343+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-11-28T22:25:12.375+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:12.511+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:25:12.546+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:25:12.601+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:25:12.628+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:25:12.676+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:25:12.681+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:25:12.695+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:25:12.767+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:25:12.781+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:25:12.788+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.249 seconds (process running for 395.941)
+2024-11-28T22:25:12.789+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:25:14.249+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:25:14.257+07:00  INFO 31276 --- [bhpt] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:14.257+07:00  INFO 31276 --- [bhpt] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-11-28T22:25:14.885+07:00  INFO 31276 --- [bhpt] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-11-28T22:25:15.032+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:25:15.033+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:25:15.033+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:25:15.264+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:25:15.287+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:25:15.418+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:25:15.419+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:25:15.419+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:25:15.443+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:25:15.444+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 409 ms
+2024-11-28T22:25:15.460+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:25:15.507+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:25:15.508+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-11-28T22:25:16.576+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@148cd2e
+2024-11-28T22:25:16.576+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-11-28T22:25:19.993+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:20.168+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:25:20.243+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:25:20.347+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:25:20.417+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:25:20.534+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:25:20.548+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:25:20.579+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:25:20.787+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:25:20.830+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:25:20.841+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.837 seconds (process running for 403.994)
+2024-11-28T22:25:20.844+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:25:22.333+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:25:22.352+07:00  INFO 31276 --- [bhpt] [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:22.354+07:00  INFO 31276 --- [bhpt] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-11-28T22:25:23.091+07:00  INFO 31276 --- [bhpt] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2024-11-28T22:25:23.267+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:25:23.267+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:25:23.267+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:25:23.659+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:25:23.687+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:25:23.878+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:25:23.880+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:25:23.880+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:25:23.912+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:25:23.912+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 643 ms
+2024-11-28T22:25:23.936+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:25:24.029+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:25:24.030+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-11-28T22:25:24.976+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@778ad7e7
+2024-11-28T22:25:24.976+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-11-28T22:25:28.052+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:28.321+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:25:28.390+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:25:28.460+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:25:28.492+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:25:28.544+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:25:28.549+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:25:28.562+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:25:28.650+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:25:28.669+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:25:28.675+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.437 seconds (process running for 411.828)
+2024-11-28T22:25:28.676+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:25:30.135+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:25:30.142+07:00  INFO 31276 --- [bhpt] [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:30.143+07:00  INFO 31276 --- [bhpt] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2024-11-28T22:25:30.757+07:00  INFO 31276 --- [bhpt] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2024-11-28T22:25:30.864+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:25:30.865+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:25:30.865+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:25:31.113+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:25:31.132+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:25:31.297+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:25:31.298+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:25:31.298+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:25:31.330+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:25:31.330+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 464 ms
+2024-11-28T22:25:31.347+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:25:31.397+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:25:31.397+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2024-11-28T22:25:32.347+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f9d3d9b
+2024-11-28T22:25:32.347+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2024-11-28T22:25:35.395+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:35.559+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:25:35.614+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:25:35.678+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:25:35.707+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:25:35.778+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:25:35.785+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:25:35.800+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:25:35.910+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:25:35.930+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:25:35.935+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.091 seconds (process running for 419.088)
+2024-11-28T22:25:35.936+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:25:46.875+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:25:46.889+07:00  INFO 31276 --- [bhpt] [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:46.889+07:00  INFO 31276 --- [bhpt] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2024-11-28T22:25:47.804+07:00  INFO 31276 --- [bhpt] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2024-11-28T22:25:47.928+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:25:47.928+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:25:47.928+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:25:48.271+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:25:48.291+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:25:48.484+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:25:48.485+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:25:48.485+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:25:48.509+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:25:48.509+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 577 ms
+2024-11-28T22:25:48.523+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:25:48.559+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:25:48.560+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2024-11-28T22:25:49.497+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11064115
+2024-11-28T22:25:49.497+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2024-11-28T22:25:52.460+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:25:52.578+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:25:52.619+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:25:52.673+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:25:52.701+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:25:52.749+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:25:52.755+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:25:52.765+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:25:52.826+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:25:52.841+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:25:52.845+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 4.947 seconds (process running for 435.998)
+2024-11-28T22:25:52.846+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:26:10.970+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:26:10.978+07:00  INFO 31276 --- [bhpt] [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:26:10.979+07:00  INFO 31276 --- [bhpt] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2024-11-28T22:26:11.890+07:00  INFO 31276 --- [bhpt] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2024-11-28T22:26:11.991+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:26:11.991+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:26:11.991+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:26:12.245+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:26:12.263+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:26:12.380+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:26:12.380+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:26:12.380+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:26:12.401+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:26:12.401+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 408 ms
+2024-11-28T22:26:12.413+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:26:12.456+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:26:12.457+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2024-11-28T22:26:13.402+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@db0dd59
+2024-11-28T22:26:13.403+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2024-11-28T22:26:16.385+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:26:16.673+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:26:16.852+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:26:16.981+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:26:17.068+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:26:17.186+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:26:17.195+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:26:17.215+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:26:17.315+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:26:17.337+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:26:17.342+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.373 seconds (process running for 460.495)
+2024-11-28T22:26:17.344+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:26:26.416+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:26:26.436+07:00  INFO 31276 --- [bhpt] [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:26:26.439+07:00  INFO 31276 --- [bhpt] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2024-11-28T22:26:27.335+07:00  INFO 31276 --- [bhpt] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2024-11-28T22:26:27.490+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:26:27.490+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:26:27.492+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:26:27.978+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:26:28.001+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:26:28.210+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:26:28.210+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:26:28.211+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:26:28.256+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:26:28.256+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 762 ms
+2024-11-28T22:26:28.285+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:26:28.381+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:26:28.382+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2024-11-28T22:26:29.325+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2eeb0a29
+2024-11-28T22:26:29.325+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2024-11-28T22:26:32.431+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:26:32.568+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:26:32.612+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:26:32.675+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:26:32.707+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:26:32.769+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:26:32.775+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:26:32.789+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:26:32.892+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:26:32.915+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:26:32.922+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.47 seconds (process running for 476.076)
+2024-11-28T22:26:32.925+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:27:10.945+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:27:10.955+07:00  INFO 31276 --- [bhpt] [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:27:10.956+07:00  INFO 31276 --- [bhpt] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2024-11-28T22:27:11.857+07:00  INFO 31276 --- [bhpt] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2024-11-28T22:27:11.977+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:27:11.977+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:27:11.977+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:27:12.228+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:27:12.245+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:27:12.368+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:27:12.368+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:27:12.369+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:27:12.392+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:27:12.392+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 413 ms
+2024-11-28T22:27:12.411+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:27:12.452+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:27:12.453+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2024-11-28T22:27:13.392+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60ab0d0b
+2024-11-28T22:27:13.392+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2024-11-28T22:27:16.398+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:27:16.686+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:27:16.739+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:27:16.840+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:27:16.891+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:27:16.972+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:27:16.980+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:27:16.998+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:27:17.108+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:27:17.126+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:27:17.133+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.181 seconds (process running for 520.286)
+2024-11-28T22:27:17.135+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:27:18.593+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:27:18.603+07:00  INFO 31276 --- [bhpt] [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:27:18.604+07:00  INFO 31276 --- [bhpt] [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2024-11-28T22:27:19.233+07:00  INFO 31276 --- [bhpt] [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2024-11-28T22:27:19.370+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:27:19.371+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:27:19.371+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:27:19.617+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:27:19.636+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:27:19.776+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:27:19.777+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:27:19.777+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:27:19.799+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:27:19.799+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 427 ms
+2024-11-28T22:27:19.811+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:27:19.850+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:27:19.851+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2024-11-28T22:27:20.895+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@970d5a5
+2024-11-28T22:27:20.895+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2024-11-28T22:27:24.228+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:27:24.354+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:27:24.388+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:27:24.437+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:27:24.460+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:27:24.508+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:27:24.512+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:27:24.524+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:27:24.595+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:27:24.609+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:27:24.614+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.272 seconds (process running for 527.767)
+2024-11-28T22:27:24.615+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:27:26.071+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:27:26.079+07:00  INFO 31276 --- [bhpt] [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:27:26.080+07:00  INFO 31276 --- [bhpt] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2024-11-28T22:27:26.717+07:00  INFO 31276 --- [bhpt] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2024-11-28T22:27:26.815+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:27:26.815+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:27:26.815+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:27:27.035+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:27:27.051+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:27:27.171+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:27:27.172+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:27:27.172+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:27:27.197+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:27:27.197+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 380 ms
+2024-11-28T22:27:27.209+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:27:27.251+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:27:27.252+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2024-11-28T22:27:28.268+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@342dd318
+2024-11-28T22:27:28.268+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2024-11-28T22:27:31.523+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:27:31.673+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:27:31.709+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:27:31.757+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:27:31.781+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:27:31.823+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:27:31.830+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:27:31.841+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:27:31.915+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:27:31.932+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:27:31.938+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.145 seconds (process running for 535.091)
+2024-11-28T22:27:31.940+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:27:47.032+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:27:47.039+07:00  INFO 31276 --- [bhpt] [Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:27:47.039+07:00  INFO 31276 --- [bhpt] [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2024-11-28T22:27:47.950+07:00  INFO 31276 --- [bhpt] [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2024-11-28T22:27:48.065+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:27:48.065+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:27:48.065+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:27:48.386+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:27:48.416+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:27:48.578+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:27:48.579+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:27:48.579+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:27:48.607+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:27:48.607+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 540 ms
+2024-11-28T22:27:48.623+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:27:48.677+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:27:48.678+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2024-11-28T22:27:49.728+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6efb134b
+2024-11-28T22:27:49.728+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2024-11-28T22:27:53.005+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:27:53.137+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:27:53.173+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:27:53.234+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:27:53.261+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:27:53.312+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:27:53.316+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:27:53.330+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:27:53.406+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:27:53.422+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:27:53.427+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.39 seconds (process running for 556.581)
+2024-11-28T22:27:53.429+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:28:37.822+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:28:37.831+07:00  INFO 31276 --- [bhpt] [Thread-75] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:28:37.833+07:00  INFO 31276 --- [bhpt] [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2024-11-28T22:28:39.183+07:00  INFO 31276 --- [bhpt] [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2024-11-28T22:28:39.284+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:28:39.285+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:28:39.285+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:28:39.601+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:28:39.625+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:28:39.760+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:28:39.761+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:28:39.762+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:28:39.790+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:28:39.790+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 503 ms
+2024-11-28T22:28:39.805+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:28:39.857+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:28:39.859+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2024-11-28T22:28:41.050+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-20 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19cb017b
+2024-11-28T22:28:41.051+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2024-11-28T22:28:44.211+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:28:44.387+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:28:44.443+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:28:44.513+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:28:44.547+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:28:44.614+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:28:44.630+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:28:44.673+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:28:44.893+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:28:44.921+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:28:44.927+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.664 seconds (process running for 608.081)
+2024-11-28T22:28:44.931+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:28:45.814+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-28T22:28:45.814+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-28T22:28:45.814+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-28T22:28:45.814+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-28T22:28:45.814+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-28T22:28:45.816+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@72438d77
+2024-11-28T22:28:45.816+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@67e63d9
+2024-11-28T22:28:45.816+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-28T22:28:45.816+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-28T22:28:45.820+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html?gidzl=tQ4NVIQwXmxOknD_8wQE2Tw-6tmueuu9bEvEVMMdYGsLlKzxEQBO3yIz7ti_fzbPpknE9ZB8BwL69xcB0m", parameters={masked}
+2024-11-28T22:28:45.823+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:28:45.827+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:28:45.887+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-11-28T22:28:45.890+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:28:45.895+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-11-28T22:28:45.895+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-11-28T22:28:45.897+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:28:45.897+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-11-28T22:28:45.897+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:28:45.899+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:28:45.901+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:28:45.904+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:28:45.905+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-11-28T22:28:45.907+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:28:45.909+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:28:45.911+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:28:45.937+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:28:46.283+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-11-28T22:28:46.284+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-11-28T22:28:46.285+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-11-28T22:28:46.286+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:9998/swagger-ui/oauth2-re (truncated)...]
+2024-11-28T22:28:46.286+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:28:46.320+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-11-28T22:28:46.321+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:28:46.323+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:28:46.379+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-11-28T22:28:46.380+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-11-28T22:28:46.440+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-11-28T22:28:46.442+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:28:46.445+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:28:48.304+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1919 ms
+2024-11-28T22:28:48.321+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-11-28T22:28:48.327+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-11-28T22:28:48.328+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:35:34.761+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:35:34.782+07:00  INFO 31276 --- [bhpt] [Thread-79] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:35:34.783+07:00  INFO 31276 --- [bhpt] [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2024-11-28T22:35:35.732+07:00  INFO 31276 --- [bhpt] [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2024-11-28T22:35:35.939+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:35:35.940+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:35:35.940+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:35:36.391+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:35:36.418+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:35:36.681+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:35:36.683+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:35:36.683+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:35:36.712+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:35:36.712+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 767 ms
+2024-11-28T22:35:36.731+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:35:36.815+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:35:36.816+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2024-11-28T22:35:37.980+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52334975
+2024-11-28T22:35:37.980+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2024-11-28T22:35:41.731+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:35:42.196+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:35:42.389+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:35:42.642+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:35:42.800+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:35:42.997+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:35:43.014+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:35:43.054+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:35:43.428+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:35:43.470+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:35:43.487+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 7.592 seconds (process running for 1026.64)
+2024-11-28T22:35:43.491+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:36:16.699+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:36:16.718+07:00  INFO 31276 --- [bhpt] [Thread-83] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:36:16.720+07:00  INFO 31276 --- [bhpt] [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2024-11-28T22:36:17.641+07:00  INFO 31276 --- [bhpt] [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2024-11-28T22:36:17.889+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:36:17.889+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:36:17.889+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:36:18.268+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:36:18.299+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:36:18.473+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:36:18.475+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:36:18.475+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:36:18.503+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:36:18.503+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
+2024-11-28T22:36:18.521+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:36:18.596+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:36:18.597+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2024-11-28T22:36:19.682+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a363c2a
+2024-11-28T22:36:19.682+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2024-11-28T22:36:23.146+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:36:23.287+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:36:23.331+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:36:23.385+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:36:23.416+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:36:23.472+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:36:23.480+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:36:23.492+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:36:23.564+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:36:23.581+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:36:23.585+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.739 seconds (process running for 1066.739)
+2024-11-28T22:36:23.587+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:36:28.239+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:36:28.247+07:00  INFO 31276 --- [bhpt] [Thread-87] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:36:28.248+07:00  INFO 31276 --- [bhpt] [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2024-11-28T22:36:29.184+07:00  INFO 31276 --- [bhpt] [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2024-11-28T22:36:29.313+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:36:29.313+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:36:29.313+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:36:29.539+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:36:29.557+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:36:29.671+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:36:29.672+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:36:29.672+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:36:29.694+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:36:29.694+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 378 ms
+2024-11-28T22:36:29.708+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:36:29.754+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:36:29.754+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2024-11-28T22:36:30.690+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f2e8ed4
+2024-11-28T22:36:30.691+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.

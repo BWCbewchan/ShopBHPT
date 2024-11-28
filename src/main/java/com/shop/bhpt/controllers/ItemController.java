@@ -29,113 +29,129 @@ import lombok.extern.slf4j.Slf4j;
 @CrossOrigin(origins = "*")
 @Slf4j
 public class ItemController {
-	@Autowired
-	private ItemRepository itemRepository;
+    
+    @Autowired
+    private ItemRepository itemRepository;
+    @GetMapping("/paginated")
+    public Page<Item> getAllItemsWithPagination(
+        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "10") int size
+    ) {
+        Pageable pageable = PageRequest.of(page, size);
+        return itemRepository.findAll(pageable);
+    }
 
-	@GetMapping
-	public List<Item> getAllItems() {
-		List<Item> items = itemRepository.findAll();
-		return items;
-	}
+    // Tìm theo subcategoryId với phân trang
+    @GetMapping("/subcategory/{subcategoryId}/paginated")
+    public Page<Item> getItemsBySubcategoryWithPagination(
+        @PathVariable Long subcategoryId,
+        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "10") int size
+    ) {
+        Pageable pageable = PageRequest.of(page, size);
+        return itemRepository.getBySubcategory_Id(subcategoryId, pageable);
+    }
 
-	@GetMapping("/{id}")
-	public Item getItemById(@PathVariable Long id) {
-		return itemRepository.findById(id).orElse(null);
-	}
 
-	@GetMapping("/paginated")
-	public Page<Item> getAllItemsWithPagination(@RequestParam(defaultValue = "0") int page,
-			@RequestParam(defaultValue = "10") int size) {
-		Pageable pageable = PageRequest.of(page, size);
-		return itemRepository.findAll(pageable);
-	}
+    // Tìm kiếm sản phẩm với nhiều điều kiện và phân trang
+    @GetMapping("/searchPaginated")
+    public Page<Item> searchItemsWithPagination(
+        @RequestParam(required = false) String name,
+        @RequestParam(required = false) Double minPrice,
+        @RequestParam(required = false) Double maxPrice,
+        @RequestParam(required = false) Integer minDiscount,
+        @RequestParam(required = false) Long subcategoryId,
+        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "10") int size
+    ) {
+        Pageable pageable = PageRequest.of(page, size);
+        return itemRepository.searchItemsWithPage(name, minPrice, maxPrice, minDiscount, subcategoryId, pageable);
+    }
+    
+    @GetMapping
+    public List<Item> getAllItems() {
+        List<Item> items = itemRepository.findAll();
+        return items;
+    }
+    
+    @GetMapping("/{id}")
+    public Item getItemById(@PathVariable Long id) {
+        return itemRepository.findById(id).orElse(null);
+    }
+    
+    @GetMapping("/search")
+    public List<Item> searchItems(@RequestParam(required = false) String query) {
+        if (query == null || query.isEmpty()) {
+            return new ArrayList<>();
+        }
+        
+        String searchTerm = query.toLowerCase();
+        return itemRepository.findAll().stream()
+            .filter(item -> 
+                // Search in name
+                item.getName().toLowerCase().contains(searchTerm) ||
+                // Search in colors
+                item.getColors().stream()
+                    .anyMatch(color -> color.toLowerCase().contains(searchTerm)) ||
+                // Search in sizes
+                item.getSizes().stream()
+                    .anyMatch(size -> size.toLowerCase().contains(searchTerm)) ||
+                // Search in price range (if query is a number)
+                (isNumeric(searchTerm) && 
+                 item.getPrice() <= Double.parseDouble(searchTerm) * 1.1 && 
+                 item.getPrice() >= Double.parseDouble(searchTerm) * 0.9)
+            )
+            .collect(Collectors.toList());
+    }
 
-	// Tìm theo subcategoryId với phân trang
-	@GetMapping("/subcategory/{subcategoryId}/paged")
-	public Page<Item> getItemsBySubcategoryWithPagination(@PathVariable Long subcategoryId,
-			@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
-		Pageable pageable = PageRequest.of(page, size);
-		return itemRepository.findBySubcategory_Id(subcategoryId, pageable);
-	}
+    private boolean isNumeric(String str) {
+        try {
+            Double.parseDouble(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
 
-	// Tìm kiếm sản phẩm với nhiều điều kiện và phân trang
-	@GetMapping("/searchPaginated")
-	public Page<Item> searchItemsWithPagination(@RequestParam(required = false) String name,
-			@RequestParam(required = false) Double minPrice, @RequestParam(required = false) Double maxPrice,
-			@RequestParam(required = false) Integer minDiscount, @RequestParam(required = false) Long subcategoryId,
-			@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
-		Pageable pageable = PageRequest.of(page, size);
-		return itemRepository.searchItems(name, minPrice, maxPrice, minDiscount, subcategoryId, pageable);
-	}
+    @GetMapping("/category/{categoryId}")
+    public List<Item> getItemsByCategory(@PathVariable Long categoryId) {
+        return itemRepository.findByCategoryId(categoryId);
+    }
 
-	@GetMapping("/search")
-	public List<Item> searchItems(@RequestParam(required = false) String query) {
-		if (query == null || query.isEmpty()) {
-			return new ArrayList<>();
-		}
+    @GetMapping("/subcategory/{subcategoryId}")
+    public List<Item> getItemsBySubcategory(@PathVariable Long subcategoryId) {
+        return itemRepository.findBySubcategoryId(subcategoryId);
+    }
 
-		String searchTerm = query.toLowerCase();
-		return itemRepository.findAll().stream().filter(item ->
-		// Search in name
-		item.getName().toLowerCase().contains(searchTerm) ||
-		// Search in colors
-				item.getColors().stream().anyMatch(color -> color.toLowerCase().contains(searchTerm)) ||
-				// Search in sizes
-				item.getSizes().stream().anyMatch(size -> size.toLowerCase().contains(searchTerm)) ||
-				// Search in price range (if query is a number)
-				(isNumeric(searchTerm) && item.getPrice() <= Double.parseDouble(searchTerm) * 1.1
-						&& item.getPrice() >= Double.parseDouble(searchTerm) * 0.9))
-				.collect(Collectors.toList());
-	}
+    @PostMapping
+    public Item createItem(@RequestBody Item item) {
+        System.out.println("Received item: " + item);
+        return itemRepository.save(item);
+    }
 
-	private boolean isNumeric(String str) {
-		try {
-			Double.parseDouble(str);
-			return true;
-		} catch (NumberFormatException e) {
-			return false;
-		}
-	}
+    @PutMapping("/{id}")
+    public Item updateItem(@PathVariable Long id, @RequestBody Item itemDetails) {
+        Item item = itemRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Item not found with id: " + id));
+        
+        item.setName(itemDetails.getName());
+        item.setPrice(itemDetails.getPrice());
+        item.setDiscount(itemDetails.getDiscount());
+        if (itemDetails.getColors() != null) {
+            item.setColors(itemDetails.getColors());
+        }
+        if (itemDetails.getSizes() != null) {
+            item.setSizes(itemDetails.getSizes());
+        }
+        if (itemDetails.getCharacteristics() != null) {
+            item.setCharacteristics(itemDetails.getCharacteristics());
+        }
+        
+        return itemRepository.save(item);
+    }
 
-	@GetMapping("/category/{categoryId}")
-	public List<Item> getItemsByCategory(@PathVariable Long categoryId) {
-		return itemRepository.findByCategoryId(categoryId);
-	}
-
-	@GetMapping("/subcategory/{subcategoryId}")
-	public List<Item> getItemsBySubcategory(@PathVariable Long subcategoryId) {
-		return itemRepository.findBySubcategoryId(subcategoryId);
-	}
-
-	@PostMapping
-	public Item createItem(@RequestBody Item item) {
-		System.out.println("Received item: " + item);
-		return itemRepository.save(item);
-	}
-
-	@PutMapping("/{id}")
-	public Item updateItem(@PathVariable Long id, @RequestBody Item itemDetails) {
-		Item item = itemRepository.findById(id)
-				.orElseThrow(() -> new RuntimeException("Item not found with id: " + id));
-
-		item.setName(itemDetails.getName());
-		item.setPrice(itemDetails.getPrice());
-		item.setDiscount(itemDetails.getDiscount());
-		if (itemDetails.getColors() != null) {
-			item.setColors(itemDetails.getColors());
-		}
-		if (itemDetails.getSizes() != null) {
-			item.setSizes(itemDetails.getSizes());
-		}
-		if (itemDetails.getCharacteristics() != null) {
-			item.setCharacteristics(itemDetails.getCharacteristics());
-		}
-
-		return itemRepository.save(item);
-	}
-
-	@DeleteMapping("/{id}")
-	public void deleteItem(@PathVariable Long id) {
-		itemRepository.deleteById(id);
-	}
-}
+    @DeleteMapping("/{id}")
+    public void deleteItem(@PathVariable Long id) {
+        itemRepository.deleteById(id);
+    }
+} 

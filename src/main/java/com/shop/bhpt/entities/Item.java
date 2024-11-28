@@ -55,6 +55,12 @@ public class Item {
     @Column(name = "characteristic")
     private Set<String> characteristics;
     
+    @Column(nullable = false)
+    private int stockQuantity = 0;
+    
+    @Column(nullable = false)
+    private int soldQuantity = 0;
+    
 	public Long getId() {
 		return id;
 	}
