@@ -2,6 +2,7 @@ package com.shop.bhpt.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -153,5 +154,89 @@ public class ItemController {
     @DeleteMapping("/{id}")
     public void deleteItem(@PathVariable Long id) {
         itemRepository.deleteById(id);
+    }
+
+    // API để quản lý số lượng tồn kho
+    @PutMapping("/{id}/stock")
+    public Item updateStockQuantity(
+        @PathVariable Long id,
+        @RequestParam int quantity
+    ) {
+        Item item = itemRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Item not found with id: " + id));
+        item.setStockQuantity(quantity);
+        return itemRepository.save(item);
+    }
+
+    // API để cập nhật số lượng đã bán
+    @PutMapping("/{id}/sold")
+    public Item updateSoldQuantity(
+        @PathVariable Long id,
+        @RequestParam int quantity
+    ) {
+        Item item = itemRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Item not found with id: " + id));
+        item.setSoldQuantity(quantity);
+        return itemRepository.save(item);
+    }
+
+    // API để lấy các sản phẩm sắp hết hàng
+    @GetMapping("/low-stock")
+    public List<Item> getLowStockItems(
+        @RequestParam(defaultValue = "10") int threshold
+    ) {
+        return itemRepository.findByStockQuantityLessThan(threshold);
+    }
+
+    // API để lấy các sản phẩm bán chạy
+    @GetMapping("/best-selling")
+    public List<Item> getBestSellingItems(
+        @RequestParam(defaultValue = "20") int threshold
+    ) {
+        return itemRepository.findBySoldQuantityGreaterThan(threshold);
+    }
+
+    // API để cập nhật nhiều thuộc tính cùng lúc
+    @PutMapping("/{id}/full-update")
+    public Item fullUpdateItem(@PathVariable Long id, @RequestBody Item itemDetails) {
+        Item item = itemRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Item not found with id: " + id));
+        
+        item.setName(itemDetails.getName());
+        item.setPrice(itemDetails.getPrice());
+        item.setDiscount(itemDetails.getDiscount());
+        item.setStockQuantity(itemDetails.getStockQuantity());
+        item.setSoldQuantity(itemDetails.getSoldQuantity());
+        item.setColors(itemDetails.getColors());
+        item.setSizes(itemDetails.getSizes());
+        item.setCharacteristics(itemDetails.getCharacteristics());
+        item.setSubcategory(itemDetails.getSubcategory());
+        
+        return itemRepository.save(item);
+    }
+
+    // API để tìm kiếm theo nhiều tiêu chí kết hợp
+    @GetMapping("/advanced-search")
+    public List<Item> advancedSearch(
+        @RequestParam(required = false) String name,
+        @RequestParam(required = false) Double minPrice,
+        @RequestParam(required = false) Double maxPrice,
+        @RequestParam(required = false) Integer minStock,
+        @RequestParam(required = false) Integer minSold,
+        @RequestParam(required = false) Set<String> colors,
+        @RequestParam(required = false) Set<String> sizes
+    ) {
+        // Implement advanced search logic here
+        return itemRepository.findAll().stream()
+            .filter(item -> 
+                (name == null || item.getName().toLowerCase().contains(name.toLowerCase())) &&
+                (minPrice == null || item.getPrice() >= minPrice) &&
+                (maxPrice == null || item.getPrice() <= maxPrice) &&
+                (minStock == null || item.getStockQuantity() >= minStock) &&
+                (minSold == null || item.getSoldQuantity() >= minSold) &&
+                (colors == null || item.getColors().containsAll(colors)) &&
+                (sizes == null || item.getSizes().containsAll(sizes))
+            )
+            .collect(Collectors.toList());
     }
 } 

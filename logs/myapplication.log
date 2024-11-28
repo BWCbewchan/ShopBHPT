@@ -9739,3 +9739,277 @@ java.lang.IllegalStateException: Ambiguous search mapping detected; Both public 
 2024-11-28T22:36:29.754+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
 2024-11-28T22:36:30.690+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f2e8ed4
 2024-11-28T22:36:30.691+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2024-11-28T22:36:33.660+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:36:33.827+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:36:33.869+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:36:33.921+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:36:33.947+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:36:33.996+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:36:34.002+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:36:34.013+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:36:34.087+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:36:34.106+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:36:34.109+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 4.821 seconds (process running for 1077.263)
+2024-11-28T22:36:34.111+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:36:37.752+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-28T22:36:37.752+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-28T22:36:37.752+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-28T22:36:37.752+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-28T22:36:37.752+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-28T22:36:37.754+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a423483
+2024-11-28T22:36:37.755+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@62cc6af5
+2024-11-28T22:36:37.755+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-28T22:36:37.755+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-11-28T22:36:37.761+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html?gidzl=tQ4NVIQwXmxOknD_8wQE2Tw-6tmueuu9bEvEVMMdYGsLlKzxEQBO3yIz7ti_fzbPpknE9ZB8BwL69xcB0m", parameters={masked}
+2024-11-28T22:36:37.763+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:36:37.769+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:36:37.813+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-11-28T22:36:37.815+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-11-28T22:36:37.815+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:36:37.816+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:36:37.817+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-11-28T22:36:37.817+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-11-28T22:36:37.817+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-11-28T22:36:37.817+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:36:37.817+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:36:37.817+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:36:37.819+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:36:37.821+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:36:37.822+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:36:37.827+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:36:37.851+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:36:38.173+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-11-28T22:36:38.174+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-11-28T22:36:38.178+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-11-28T22:36:38.179+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:9998/swagger-ui/oauth2-re (truncated)...]
+2024-11-28T22:36:38.182+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:36:38.206+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/favicon-32x32.png", parameters={}
+2024-11-28T22:36:38.208+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-11-28T22:36:38.212+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:36:38.474+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-11-28T22:36:38.475+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-11-28T22:36:40.131+07:00  INFO 31276 --- [bhpt] [http-nio-9998-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1647 ms
+2024-11-28T22:36:40.144+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-11-28T22:36:40.150+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2024-11-28T22:36:40.151+07:00 DEBUG 31276 --- [bhpt] [http-nio-9998-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-28T22:44:07.639+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-28T22:44:07.652+07:00  INFO 31276 --- [bhpt] [Thread-91] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:44:07.653+07:00  INFO 31276 --- [bhpt] [Thread-91] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2024-11-28T22:44:08.567+07:00  INFO 31276 --- [bhpt] [Thread-91] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2024-11-28T22:44:08.816+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:44:08.816+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:44:08.817+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:44:09.424+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:44:09.448+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:44:09.635+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:44:09.638+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:44:09.638+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:44:09.661+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:44:09.661+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 839 ms
+2024-11-28T22:44:09.681+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:44:09.734+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:44:09.734+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2024-11-28T22:44:10.709+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-24 - Added connection com.mysql.cj.jdbc.ConnectionImpl@751002e6
+2024-11-28T22:44:10.710+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2024-11-28T22:44:13.673+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:44:13.799+07:00  WARN 31276 --- [bhpt] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemController' defined in file [D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes\com\shop\bhpt\controllers\ItemController.class]: Failed to instantiate [com.shop.bhpt.controllers.ItemController]: Constructor threw exception
+2024-11-28T22:44:13.799+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:44:13.799+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2024-11-28T22:44:14.243+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+2024-11-28T22:44:14.243+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-28T22:44:14.250+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-28T22:44:14.267+07:00 ERROR 31276 --- [bhpt] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemController' defined in file [D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes\com\shop\bhpt\controllers\ItemController.class]: Failed to instantiate [com.shop.bhpt.controllers.ItemController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.15.jar:6.1.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.15.jar:6.1.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.6.jar:3.3.6]
+	at com.shop.bhpt.BhptApplication.main(BhptApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.6.jar:3.3.6]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.shop.bhpt.controllers.ItemController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331) ~[spring-beans-6.1.15.jar:6.1.15]
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method setStockQuantity(int) is undefined for the type Item
+	The method setSoldQuantity(int) is undefined for the type Item
+	The method findByStockQuantityLessThan(int) is undefined for the type ItemRepository
+	The method findBySoldQuantityGreaterThan(int) is undefined for the type ItemRepository
+	The method getStockQuantity() is undefined for the type Item
+	The method getSoldQuantity() is undefined for the type Item
+	The method getStockQuantity() is undefined for the type Item
+	The method getSoldQuantity() is undefined for the type Item
+
+	at com.shop.bhpt.controllers.ItemController.<init>(ItemController.java:167) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.15.jar:6.1.15]
+	... 22 common frames omitted
+
+2024-11-28T22:44:15.742+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:44:15.742+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:44:15.742+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:44:16.101+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:44:16.132+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:44:16.369+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:44:16.373+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:44:16.373+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:44:16.422+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:44:16.422+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 678 ms
+2024-11-28T22:44:16.446+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:44:16.508+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:44:16.509+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Starting...
+2024-11-28T22:44:17.562+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-25 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d0947ee
+2024-11-28T22:44:17.562+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Start completed.
+2024-11-28T22:44:20.885+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:44:20.976+07:00  WARN 31276 --- [bhpt] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemController' defined in file [D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes\com\shop\bhpt\controllers\ItemController.class]: Failed to instantiate [com.shop.bhpt.controllers.ItemController]: Constructor threw exception
+2024-11-28T22:44:20.976+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:44:20.976+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown initiated...
+2024-11-28T22:44:21.439+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown completed.
+2024-11-28T22:44:21.439+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-28T22:44:21.443+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-28T22:44:21.445+07:00 ERROR 31276 --- [bhpt] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'itemController' defined in file [D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes\com\shop\bhpt\controllers\ItemController.class]: Failed to instantiate [com.shop.bhpt.controllers.ItemController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.15.jar:6.1.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.15.jar:6.1.15]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.6.jar:3.3.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.6.jar:3.3.6]
+	at com.shop.bhpt.BhptApplication.main(BhptApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.6.jar:3.3.6]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.shop.bhpt.controllers.ItemController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94) ~[spring-beans-6.1.15.jar:6.1.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331) ~[spring-beans-6.1.15.jar:6.1.15]
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method setStockQuantity(int) is undefined for the type Item
+	The method setSoldQuantity(int) is undefined for the type Item
+	The method findByStockQuantityLessThan(int) is undefined for the type ItemRepository
+	The method findBySoldQuantityGreaterThan(int) is undefined for the type ItemRepository
+	The method getStockQuantity() is undefined for the type Item
+	The method getSoldQuantity() is undefined for the type Item
+	The method getStockQuantity() is undefined for the type Item
+	The method getSoldQuantity() is undefined for the type Item
+
+	at com.shop.bhpt.controllers.ItemController.<init>(ItemController.java:167) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.15.jar:6.1.15]
+	... 22 common frames omitted
+
+2024-11-28T22:45:07.519+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:45:07.519+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:45:07.519+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:45:07.821+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:45:07.837+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:45:07.933+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:45:07.933+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:45:07.933+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:45:07.954+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:45:07.954+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 433 ms
+2024-11-28T22:45:07.971+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:45:08.025+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:45:08.025+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Starting...
+2024-11-28T22:45:09.094+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-26 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c7920f1
+2024-11-28T22:45:09.094+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Start completed.
+2024-11-28T22:45:12.492+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:45:12.693+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:45:12.747+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:45:12.845+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 41 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:45:12.890+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:45:12.965+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:45:12.974+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:45:12.997+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:45:13.146+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:45:13.169+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:45:13.174+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.671 seconds (process running for 1596.328)
+2024-11-28T22:45:13.177+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:46:15.397+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-28T22:46:15.419+07:00  INFO 31276 --- [bhpt] [Thread-95] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:46:15.420+07:00  INFO 31276 --- [bhpt] [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown initiated...
+2024-11-28T22:46:16.344+07:00  INFO 31276 --- [bhpt] [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown completed.
+2024-11-28T22:46:16.606+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:46:16.606+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:46:16.606+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:46:17.152+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:46:17.184+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:46:17.421+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:46:17.422+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:46:17.422+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:46:17.474+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:46:17.474+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2024-11-28T22:46:17.501+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:46:17.604+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:46:17.607+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Starting...
+2024-11-28T22:46:18.612+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-27 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46e67874
+2024-11-28T22:46:18.612+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Start completed.
+2024-11-28T22:46:22.021+07:00  INFO 31276 --- [bhpt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:46:22.202+07:00  WARN 31276 --- [bhpt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-28T22:46:22.242+07:00  INFO 31276 --- [bhpt] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-11-28T22:46:22.302+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 41 mappings in 'requestMappingHandlerMapping'
+2024-11-28T22:46:22.334+07:00 DEBUG 31276 --- [bhpt] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /data/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**, /explorer/**] in 'resourceHandlerMapping'
+2024-11-28T22:46:22.391+07:00 DEBUG 31276 --- [bhpt] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-28T22:46:22.396+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-28T22:46:22.408+07:00 DEBUG 31276 --- [bhpt] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-11-28T22:46:22.506+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-28T22:46:22.523+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9998 (http) with context path '/'
+2024-11-28T22:46:22.527+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Started BhptApplication in 5.97 seconds (process running for 1665.681)
+2024-11-28T22:46:22.529+07:00  INFO 31276 --- [bhpt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-28T22:49:59.291+07:00  INFO 31276 --- [bhpt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 17 class path changes (0 additions, 0 deletions, 17 modifications)
+2024-11-28T22:49:59.309+07:00  INFO 31276 --- [bhpt] [Thread-105] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-28T22:49:59.310+07:00  INFO 31276 --- [bhpt] [Thread-105] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown initiated...
+2024-11-28T22:50:00.185+07:00  INFO 31276 --- [bhpt] [Thread-105] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown completed.
+2024-11-28T22:50:00.293+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Starting BhptApplication using Java 21.0.4 with PID 31276 (D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT\target\classes started by admin in D:\A.N4K1\JAVA(WWW)\DOAN\ShopBHPT)
+2024-11-28T22:50:00.293+07:00 DEBUG 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : Running with Spring Boot v3.3.6, Spring v6.1.15
+2024-11-28T22:50:00.293+07:00  INFO 31276 --- [bhpt] [restartedMain] com.shop.bhpt.BhptApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-28T22:50:00.523+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-28T22:50:00.540+07:00  INFO 31276 --- [bhpt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2024-11-28T22:50:00.656+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9998 (http)
+2024-11-28T22:50:00.658+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-28T22:50:00.658+07:00  INFO 31276 --- [bhpt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-28T22:50:00.681+07:00  INFO 31276 --- [bhpt] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-11-28T22:50:00.681+07:00  INFO 31276 --- [bhpt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 386 ms
+2024-11-28T22:50:00.693+07:00 DEBUG 31276 --- [bhpt] [restartedMain] c.s.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2024-11-28T22:50:00.736+07:00  INFO 31276 --- [bhpt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-28T22:50:00.736+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Starting...
+2024-11-28T22:50:01.696+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-28 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57492063
+2024-11-28T22:50:01.696+07:00  INFO 31276 --- [bhpt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Start completed.

@@ -69,4 +69,12 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 	@Query("SELECT i FROM Item i JOIN FETCH i.subcategory WHERE i.subcategory.id = :subcategoryId")
 	List<Item> findBySubcategoryId(@Param("subcategoryId") Long subcategoryId);
 
+	// Tìm các sản phẩm có số lượng tồn kho thấp hơn ngưỡng
+	@Query("SELECT i FROM Item i WHERE i.stockQuantity < :threshold")
+	List<Item> findByStockQuantityLessThan(@Param("threshold") int threshold);
+
+	// Tìm các sản phẩm có số lượng đã bán cao hơn ngưỡng
+	@Query("SELECT i FROM Item i WHERE i.soldQuantity > :threshold")
+	List<Item> findBySoldQuantityGreaterThan(@Param("threshold") int threshold);
+
 } 
