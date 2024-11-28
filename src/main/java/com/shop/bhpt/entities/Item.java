@@ -61,6 +61,8 @@ public class Item {
     @Column(nullable = false)
     private int soldQuantity = 0;
     
+    
+
 	public Long getId() {
 		return id;
 	}
