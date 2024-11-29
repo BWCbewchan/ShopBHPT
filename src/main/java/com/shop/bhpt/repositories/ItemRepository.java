@@ -16,6 +16,19 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 	Page<Item> findAll(Pageable pageable);
 	Page<Item> getBySubcategory_Id(Long subcategoryId, Pageable pageable);
 	List<Item> findBySubcategory_Id(Long subcategoryId);
+	@Query("SELECT i FROM Item i WHERE i.soldQuantity > 0 ORDER BY i.soldQuantity DESC")
+	Page<Item> findTop10SellingItems(Pageable pageable);
+
+	@Query("SELECT i FROM Item i WHERE i.soldQuantity > 0 ORDER BY i.soldQuantity ASC")
+	Page<Item> findTop10SlowSellingItems(Pageable pageable);
+
+
+	@Query("SELECT i FROM Item i WHERE i.stockQuantity > 0 AND i.stockQuantity <= 10")
+	Page<Item> findLowStockItems(Pageable pageable);
+
+	@Query("SELECT i FROM Item i WHERE i.stockQuantity = 0")
+	Page<Item> findOutOfStockItems(Pageable pageable);
+
 	
 	// Tìm theo tên (case insensitive)
 	List<Item> findByNameContainingIgnoreCase(String name);
